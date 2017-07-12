@@ -1,38 +1,40 @@
+
 html, body{
-	height: 100%;
-	width: 100%;
-	box-sizing: border-box;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
 }
+
 
 body{
 	background-color: silver;
 }
 
 nav{
-  height: 20px;
   width: 100%;
-  background-color: silver;
   position: fixed;
   z-index: 1;
  }
 
+#home{
+
+  margin-top: 75px;
+}
 
 ul{
 
- background-color: silver;
-   &:after{
-    content: " ";
-    display: block;
-    clear: both;
-  }
+ background-color: #464b4d;
 
 
-  li{
+ li{
     float: left;
     width: 12%;
     color: white;
     font-size: 18px;
-  	 list-style: none;
+     list-style: none;
   }
   a{
     height: 100%;
@@ -52,32 +54,44 @@ ul{
 .jumbotron{
 	 background-image: url(styles/utah10.jpg);
 	 background-size: 100%;
-	 position: relative;
 	 height: 450px;
 	 margin-top: 25px;
 	 border-radius: 25px;
-	 h1{
+
+   section{
+    float: right;
+    padding-right: 45px;
+    text-align: center;
+    color: papayawhip;
+
+   
+	/* h1{
 	 	color: papayawhip;
 	 	float: right;
 	 	padding-right: 25px;
 	 }
 	 p{
-	 	position: absolute;
+
 	 	color: papayawhip;
-	 	float: right;
-	 	margin-top:100px;
-	 	margin-left: 700px;
+	 
+	 */
 	 }
+}
+
+#portfolio{
+  height: 1000px;
+  width: 100%
 }
 
 
 
 
-@media (min-width: 576px) {  }
+
+/*@media (min-width: 576px) {  }
 
 @media (min-width: 768px) {  }
 
 
 @media (min-width: 992px) {}
 
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) { }*/
