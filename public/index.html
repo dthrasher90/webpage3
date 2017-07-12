@@ -13,6 +13,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+	<script src="https://use.fontawesome.com/ffafbe8b8e.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway|Roboto" rel="stylesheet">
+
 	<link rel="stylesheet" href="/styles/reset.css">
 	<link rel="stylesheet" href="/styles/main.css">
 
@@ -28,12 +32,14 @@
 	    <a class="nav-link" href="#">Home</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="#portfolio">Portfolio</a>
+	    <a class="nav-link" href="#projects">Projects</a>
 	  </li>
 	   <li class="nav-item">
-	    <a class="nav-link" href="#">Link</a>
+	    <a class="nav-link" href="#about">About</a>
 	  </li>
-	
+	  <li class="nav-item">
+	    <a class="nav-link" href="#blog">Blog</a>
+	  </li>
 	</ul>
 </nav>
 
@@ -46,6 +52,15 @@
  	  	<section>
 		    <h1 class="display-3">Drew Thrasher</h1>
 		    <p class="lead">Web Developer | Salt Lake City, UT </p>
+
+		    <div class= "links">
+
+			    <a href="mailto:dthrasher90@gmail.com?Subject=Hello%20again">  <i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+
+	            <a href="https://github.com/dthrasher90/"> <i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+
+            </div>
+
 		</section>
   	  </div>
   	</div>
@@ -56,51 +71,65 @@
 
  <div class= "container">
  	<div class= "row">
-  	 <div id = "portfolio">
-  	 	<h1>Portfolio</h1>
+  	 <div id = "projects">
+  	 	<h1>Projects</h1>
 
-<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="styles/coffeelocator.png" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="styles/usdcrop.jpg"alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="styles/contactlist.png" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="styles/headcoach.png" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
-  	 	</div>
+	<div class="card-deck">
+	  <div class="card">
+	    <img class="card-img-top" src="styles/coffeelocator.png" alt="Card image cap">
+	    <div class="card-block">
+	      <h4 class="card-title">Coffee Locator</h4>
+	      <p class="card-text">This app uses the Four Square API to locate local coffee shops</p>
+	   <a href="https://coffeelocator.herokuapp.com/" class="btn btn-secondary btn-sm">Open</a>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <img class="card-img-top" src="styles/usdcrop.jpg"alt="Card image cap">
+	    <div class="card-block">
+	      <h4 class="card-title">US Dollar Converter</h4>
+	      <p class="card-text">This app uses Fixer.io to convert the dollar into forieng currency.  </p>
+	      <a href="https://usdconverter.herokuapp.com" class="btn btn-secondary btn-sm">Open</a>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	    <img class="card-img-top" src="styles/contactlist.png" alt="Card image cap">
+	    <div class="card-block">
+	      <h4 class="card-title">Contact List</h4>
+	      <p class="card-text">This app is a MEAN stack contact list. Uses Mongoose to create a DB</p><a href="https://contact4.herokuapp.com/" class="btn btn-secondary btn-sm">Open</a>
+	    </div>
+	  </div>
+
+	  <div class="card">
+	     <img class="card-img-top" src="styles/headcoach.png" alt="Card image cap">
+	    <div class="card-block">
+	 	 <h4 class="card-title">Head Coach</h4>
+	      <p class="card-text">This project is  ongoing.  It's desigend to be the only football RPG on the web.</p> 
+	   <a href="https://football4.herokuapp.com/" class="btn btn-secondary btn-sm">Open</a>
+	     
+	    </div>
+	  </div>
+	</div>
+
+
+<!-- 	end portfolio brackets -->
+  	  </div>
    </div>
 </div>
 
+<div class="container">
+ <div class="row">
+ 	<div id="about">
+ 		<h1>About Me</h1>
+ 		
+ 	</div>
+ </div>
+</div>
 
 
 
-</nav>
+
 
 
 

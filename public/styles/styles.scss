@@ -52,16 +52,16 @@ ul{
 
   margin-top: 75px;
 
-  
 }
-
 .jumbotron{
 	 background-image: url(styles/utah10.jpg);
 	 background-size: 100%;
+   position: relative;
    box-shadow: 10px 10px 5px #888888;
-	 height: 450px;
+	 height: 500px;
 	 margin-top: 25px;
 	 border-radius: 25px;
+   font-family: raleway;
 
    section{
     float: right;
@@ -69,37 +69,64 @@ ul{
     text-align: center;
     color: papayawhip;
 
-   
-	/* h1{
-	 	color: papayawhip;
-	 	float: right;
-	 	padding-right: 25px;
 	 }
-	 p{
 
-	 	color: papayawhip;
-	 
-	 */
-	 }
+   p{
+    font-family: Raleway;
+   }
 }
 
-#portfolio{
+.links{
+  position: absolute;
+  margin-left: 200px;
+
+  a{
+    color: papayawhip;
+  }
+   &:hover{
+    color: saddlebrown;
+
+  }
+   &:visited{
+    color: papayawhip;
+  }
+}
+
+#projects{
   height: 1000px;
   width: 100%;
   padding-top: 40px;
 
+  h1{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-family: 'Bree Serif', serif;
+    padding-bottom: 3px;
+  }
 
   .card{
     background-color: darkslategrey;
     box-shadow: 10px 10px 5px #888888;
+    color: ghostwhite;
     width: 20%;
-
+ 
 
     img{
 
       height: 200px;
     }
+  }
+}
 
+#about{
+  height: 1000px;
+  width: 100%;
+
+    h1{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-family: 'Bree Serif', serif;
+    padding-bottom: 3px;
   }
 
 }

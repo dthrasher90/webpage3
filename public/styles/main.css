@@ -47,38 +47,57 @@ ul {
 .jumbotron {
   background-image: url(styles/utah10.jpg);
   background-size: 100%;
+  position: relative;
   -webkit-box-shadow: 10px 10px 5px #888888;
   box-shadow: 10px 10px 5px #888888;
-  height: 450px;
+  height: 500px;
   margin-top: 25px;
-  border-radius: 25px; }
+  border-radius: 25px;
+  font-family: raleway; }
   .jumbotron section {
     float: right;
     padding-right: 45px;
     text-align: center;
-    color: papayawhip;
-    /* h1{
-	 	color: papayawhip;
-	 	float: right;
-	 	padding-right: 25px;
-	 }
-	 p{
+    color: papayawhip; }
+  .jumbotron p {
+    font-family: Raleway; }
 
-	 	color: papayawhip;
-	 
-	 */ }
+.links {
+  position: absolute;
+  margin-left: 200px; }
+  .links a {
+    color: papayawhip; }
+  .links:hover {
+    color: saddlebrown; }
+  .links:visited {
+    color: papayawhip; }
 
-#portfolio {
+#projects {
   height: 1000px;
   width: 100%;
   padding-top: 40px; }
-  #portfolio .card {
+  #projects h1 {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-family: 'Bree Serif', serif;
+    padding-bottom: 3px; }
+  #projects .card {
     background-color: darkslategrey;
     -webkit-box-shadow: 10px 10px 5px #888888;
     box-shadow: 10px 10px 5px #888888;
+    color: ghostwhite;
     width: 20%; }
-    #portfolio .card img {
+    #projects .card img {
       height: 200px; }
+
+#about {
+  height: 1000px;
+  width: 100%; }
+  #about h1 {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-family: 'Bree Serif', serif;
+    padding-bottom: 3px; }
 
 /*@media (min-width: 576px) {  }
 
