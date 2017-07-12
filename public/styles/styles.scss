@@ -14,15 +14,13 @@ body{
 }
 
 nav{
+  height: 30px;
   width: 100%;
   position: fixed;
   z-index: 1;
  }
 
-#home{
 
-  margin-top: 75px;
-}
 
 ul{
 
@@ -50,10 +48,17 @@ ul{
   }  
 }
 
+#home{
+
+  margin-top: 75px;
+
+  
+}
 
 .jumbotron{
 	 background-image: url(styles/utah10.jpg);
 	 background-size: 100%;
+   box-shadow: 10px 10px 5px #888888;
 	 height: 450px;
 	 margin-top: 25px;
 	 border-radius: 25px;
@@ -80,7 +85,23 @@ ul{
 
 #portfolio{
   height: 1000px;
-  width: 100%
+  width: 100%;
+  padding-top: 40px;
+
+
+  .card{
+    background-color: darkslategrey;
+    box-shadow: 10px 10px 5px #888888;
+    width: 20%;
+
+
+    img{
+
+      height: 200px;
+    }
+
+  }
+
 }
 
 

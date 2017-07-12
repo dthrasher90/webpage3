@@ -18,12 +18,10 @@ body {
   background-color: silver; }
 
 nav {
+  height: 30px;
   width: 100%;
   position: fixed;
   z-index: 1; }
-
-#home {
-  margin-top: 75px; }
 
 ul {
   background-color: #464b4d; }
@@ -43,9 +41,14 @@ ul {
     ul a:visited {
       color: white; }
 
+#home {
+  margin-top: 75px; }
+
 .jumbotron {
   background-image: url(styles/utah10.jpg);
   background-size: 100%;
+  -webkit-box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888;
   height: 450px;
   margin-top: 25px;
   border-radius: 25px; }
@@ -67,7 +70,15 @@ ul {
 
 #portfolio {
   height: 1000px;
-  width: 100%; }
+  width: 100%;
+  padding-top: 40px; }
+  #portfolio .card {
+    background-color: darkslategrey;
+    -webkit-box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #888888;
+    width: 20%; }
+    #portfolio .card img {
+      height: 200px; }
 
 /*@media (min-width: 576px) {  }
 
