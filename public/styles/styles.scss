@@ -121,7 +121,6 @@ ul{
     box-shadow: 10px 10px 5px #888888;
     color: ghostwhite;
     width: 20%;
-
     img{
 
       height: 200px;
@@ -133,6 +132,7 @@ ul{
   height: 1000px;
   width: 100%;
   font-family: Raleway;
+
   
    h1{
     padding: 10px;
@@ -153,6 +153,7 @@ ul{
     margin-top: 5px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #888888;
+     overflow: scroll;
 
     img{
       height: 400px;
@@ -213,11 +214,92 @@ footer{
   font-weight: bold;
 }
 
-/*@media (min-width: 576px) {  }
+@media (min-width: 343px) {  
+ #projects{
+  height: 2000px;
+  .card-deck {
+    display: block;
+   /* justify-content: flex-start;
+    flex-flow: row wrap; 
+    align-items: stretch;*/
+  }
+  .card-deck .card {
+    display: block;
+    width: 40%;
+    }
 
-@media (min-width: 768px) {  }
+     h4{
+      font-size: 8px;
+
+    }
+
+    p{
+      font-size: 6px;
+    }
+ }
+
+}
+
+
+@media (min-width: 576px) {  
+ #projects{
+  .card-deck {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap; 
+    align-items: stretch;
+  }
+  .card-deck .card {
+    display: block;
+    flex-basis: 20%; /* change this value for each breakpoint*/
+    }
+
+     h4{
+      font-size: 10px;
+
+    }
+
+    p{
+      font-size: 8px;
+    }
+ }
+
+}
+
+@media (min-width: 768px) { 
+
+ #projects{
+  .card-deck {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap; 
+    align-items: stretch;
+  }
+
+  .card-deck .card {
+    display: block;
+    flex-basis: 33.3%; /* change this value for each breakpoint*/
+
+
+  }
+
+
+ }
+  #about {
+    article{
+      overflow: hidden;
+    }
+  }
+ }
+
+ #blog{
+
+  .entry{
+    width: 75%;
+  }
+ }
 
 
 @media (min-width: 992px) {}
 
-@media (min-width: 1200px) { }*/
+@media (min-width: 1200px) { }
