@@ -8,6 +8,9 @@ html, body{
   box-sizing: border-box;
 }
 
+*{
+  box-sizing:  border-box;
+}
 
 body{
 	background-color: silver;
@@ -17,7 +20,10 @@ nav{
   height: 30px;
   width: 100%;
   position: fixed;
+  font-family: Raleway;
+  font-size: 12px;
   z-index: 1;
+  border-bottom: 1px solid #f8f8f8;
  }
 
 
@@ -29,10 +35,12 @@ ul{
 
  li{
     float: left;
-    width: 12%;
+    width: 10%;
     color: white;
     font-size: 18px;
-     list-style: none;
+    list-style: none;
+
+
   }
   a{
     height: 100%;
@@ -61,7 +69,8 @@ ul{
 	 height: 500px;
 	 margin-top: 25px;
 	 border-radius: 25px;
-   font-family: raleway;
+   font-family: 'Bree Serif', serif;
+   text-shadow: 2px 2px black;
 
    section{
     float: right;
@@ -73,6 +82,7 @@ ul{
 
    p{
     font-family: Raleway;
+    text-shadow: 1px 1px black;
    }
 }
 
@@ -82,18 +92,18 @@ ul{
 
   a{
     color: papayawhip;
-  }
-   &:hover{
+
+      &:hover{
     color: saddlebrown;
 
-  }
-   &:visited{
-    color: papayawhip;
+    }
+
+   
   }
 }
 
 #projects{
-  height: 1000px;
+  height: 700px;
   width: 100%;
   padding-top: 40px;
 
@@ -107,10 +117,10 @@ ul{
 
   .card{
     background-color: darkslategrey;
+    font-family: Raleway;
     box-shadow: 10px 10px 5px #888888;
     color: ghostwhite;
     width: 20%;
- 
 
     img{
 
@@ -122,18 +132,64 @@ ul{
 #about{
   height: 1000px;
   width: 100%;
-
-    h1{
+  
+   h1{
     padding: 10px;
     border-bottom: 1px solid black;
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
-  }
+    text-shadow: 1px 1px papayawhip;
+    margin-top: 50px;
+
+    }
+
+  article{
+    height:800px;
+    width: 90%;
+    background-color: ghostwhite;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px #888888;
+
+    img{
+      height: 400px;
+      width: 325px;
+      float: right;
+      padding: 30px;
+      margin-left: 50px;
+      margin-top: 10px;
+      border-left: 1px solid #f8f8f8;
+    }
+   }
 
 }
 
+#posts{
+  height: 1000px;
+  width: 100%;
+  
+   h1{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-family: 'Bree Serif', serif;
+    padding-bottom: 3px;
+    text-shadow: 1px 1px papayawhip;
+    margin-top: 50px;
 
+    }
+}
 
+.entry{
+
+   font-family: 'Bree Serif', serif;
+   border-left: 3px solid #f8f8f8;
+   margin-top: 25px;
+ 
+   padding-left: 25px;
+   background-color: darkslateblue;
+   width: 60%;
+}
 
 
 /*@media (min-width: 576px) {  }

@@ -14,6 +14,10 @@ html, body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   background-color: silver; }
 
@@ -21,13 +25,16 @@ nav {
   height: 30px;
   width: 100%;
   position: fixed;
-  z-index: 1; }
+  font-family: Raleway;
+  font-size: 12px;
+  z-index: 1;
+  border-bottom: 1px solid #f8f8f8; }
 
 ul {
   background-color: #464b4d; }
   ul li {
     float: left;
-    width: 12%;
+    width: 10%;
     color: white;
     font-size: 18px;
     list-style: none; }
@@ -53,27 +60,27 @@ ul {
   height: 500px;
   margin-top: 25px;
   border-radius: 25px;
-  font-family: raleway; }
+  font-family: 'Bree Serif', serif;
+  text-shadow: 2px 2px black; }
   .jumbotron section {
     float: right;
     padding-right: 45px;
     text-align: center;
     color: papayawhip; }
   .jumbotron p {
-    font-family: Raleway; }
+    font-family: Raleway;
+    text-shadow: 1px 1px black; }
 
 .links {
   position: absolute;
   margin-left: 200px; }
   .links a {
     color: papayawhip; }
-  .links:hover {
-    color: saddlebrown; }
-  .links:visited {
-    color: papayawhip; }
+    .links a:hover {
+      color: saddlebrown; }
 
 #projects {
-  height: 1000px;
+  height: 700px;
   width: 100%;
   padding-top: 40px; }
   #projects h1 {
@@ -84,6 +91,7 @@ ul {
     text-shadow: 1px 1px papayawhip; }
   #projects .card {
     background-color: darkslategrey;
+    font-family: Raleway;
     -webkit-box-shadow: 10px 10px 5px #888888;
     box-shadow: 10px 10px 5px #888888;
     color: ghostwhite;
@@ -98,7 +106,45 @@ ul {
     padding: 10px;
     border-bottom: 1px solid black;
     font-family: 'Bree Serif', serif;
-    padding-bottom: 3px; }
+    padding-bottom: 3px;
+    text-shadow: 1px 1px papayawhip;
+    margin-top: 50px; }
+  #about article {
+    height: 800px;
+    width: 90%;
+    background-color: ghostwhite;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 5px 5px #888888;
+    box-shadow: 5px 5px 5px 5px #888888; }
+    #about article img {
+      height: 400px;
+      width: 325px;
+      float: right;
+      padding: 30px;
+      margin-left: 50px;
+      margin-top: 10px;
+      border-left: 1px solid #f8f8f8; }
+
+#posts {
+  height: 1000px;
+  width: 100%; }
+  #posts h1 {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-family: 'Bree Serif', serif;
+    padding-bottom: 3px;
+    text-shadow: 1px 1px papayawhip;
+    margin-top: 50px; }
+
+.entry {
+  font-family: 'Bree Serif', serif;
+  border-left: 3px solid #f8f8f8;
+  margin-top: 25px;
+  padding-left: 25px;
+  background-color: darkslateblue;
+  width: 60%; }
 
 /*@media (min-width: 576px) {  }
 
