@@ -132,6 +132,7 @@ ul{
 #about{
   height: 1000px;
   width: 100%;
+  font-family: Raleway;
   
    h1{
     padding: 10px;
@@ -140,6 +141,7 @@ ul{
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;
     margin-top: 50px;
+    font-family: 'Bree Serif', serif;
 
     }
 
@@ -161,8 +163,19 @@ ul{
       margin-top: 10px;
       border-left: 1px solid #f8f8f8;
     }
-   }
 
+    h3{
+       font-family: 'Bree Serif', serif;
+       margin-left: 10px;
+       padding-top:   10px;
+    
+    }
+    p{
+      padding-bottom: 5px;
+      padding: 5px;
+      padding-left: 10px;
+    }
+  }
 }
 
 #posts{
@@ -191,6 +204,14 @@ ul{
    width: 60%;
 }
 
+
+footer{
+  border-top: 1px solid black;
+  height: 50px;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: bold;
+}
 
 /*@media (min-width: 576px) {  }
 
