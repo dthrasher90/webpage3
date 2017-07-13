@@ -166,6 +166,25 @@ footer {
   font-family: Raleway;
   font-weight: bold; }
 
+#projects {
+  height: 1800px;
+  /*end bracket*/ }
+  #projects .card-deck {
+    display: block;
+    /*justify-content: flex-start;
+  flex-flow: row wrap; 
+  align-items: stretch;*/ }
+  #projects .card-deck .card {
+    width: 50%; }
+    #projects .card-deck .card h4 {
+      font-size: 10px; }
+    #projects .card-deck .card p {
+      font-size: 8px; }
+  #projects #about article {
+    overflow: scroll; }
+  #projects #about p {
+    float: left; }
+
 @media (max-width: 768px) and (min-width: 568px) {
   #projects {
     height: 1200px; }
