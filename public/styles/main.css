@@ -87,7 +87,6 @@ ul {
   margin: 0 auto; }
   #projects h1 {
     padding: 10px;
-    border-bottom: 1px solid black;
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip; }
@@ -111,24 +110,23 @@ ul {
   font-family: Raleway; }
   #about h1 {
     padding: 10px;
-    border-bottom: 1px solid black;
+    width: 100%;
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;
     margin-top: 50px;
     font-family: 'Bree Serif', serif; }
   #about article {
-    height: 800px;
+    height: 500px;
     width: 90%;
     background-color: ghostwhite;
     margin: 0 auto;
-    margin-top: 5px;
     border-radius: 15px;
     -webkit-box-shadow: 5px 5px 5px 5px #888888;
     box-shadow: 5px 5px 5px 5px #888888;
     overflow-y: scroll; }
     #about article img {
-      height: 400px;
+      height: 300px;
       width: 325px;
       float: right;
       padding: 30px;
@@ -145,11 +143,11 @@ ul {
       padding-left: 10px; }
 
 #posts {
-  height: 1000px;
+  height: 500px;
+  min-height: 100vh;
   width: 100%; }
   #posts h1 {
     padding: 10px;
-    border-bottom: 1px solid black;
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;

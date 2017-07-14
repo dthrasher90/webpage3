@@ -111,7 +111,7 @@ ul{
 
   h1{
     padding: 10px;
-    border-bottom: 1px solid black;
+    
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;
@@ -144,7 +144,8 @@ ul{
   
    h1{
     padding: 10px;
-    border-bottom: 1px solid black;
+    width: 100%;
+ 
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;
@@ -154,17 +155,16 @@ ul{
     }
 
   article{
-    height:800px;
+    height:500px;
     width: 90%;
     background-color: ghostwhite;
     margin: 0 auto;
-    margin-top: 5px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #888888;
     overflow-y: scroll;
 
     img{
-      height: 400px;
+      height: 300px;
       width: 325px;
       float: right;
       padding: 30px;
@@ -188,12 +188,12 @@ ul{
 }
 
 #posts{
-  height: 1000px;
+  height: 500px;
+  min-height: 100vh;
   width: 100%;
   
    h1{
     padding: 10px;
-    border-bottom: 1px solid black;
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;
