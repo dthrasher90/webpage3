@@ -111,6 +111,10 @@ ul {
     float: left;
     margin-left: 50px;
     width: 20%; }
+    #projects .mdl-card .icons {
+      margin: 0 auto; }
+    #projects .mdl-card p {
+      height: 120px; }
     #projects .mdl-card:after {
       display: block;
       clear: both;

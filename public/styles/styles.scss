@@ -123,6 +123,13 @@ ul{
   margin-left: 50px;
   width: 20%;
  
+  .icons{
+    margin: 0 auto;
+  }
+  p{
+    height: 120px;
+  }
+
     &:after{
     display: block;
     clear: both;
@@ -130,6 +137,8 @@ ul{
     margin-top: -1px;
     visibility: hidden;
   }
+
+
 }
 
 
