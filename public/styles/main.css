@@ -57,7 +57,7 @@ ul {
   position: relative;
   -webkit-box-shadow: 10px 10px 5px #888888;
   box-shadow: 10px 10px 5px #888888;
-  height: 500px;
+  height: 700px;
   margin-top: 25px;
   border-radius: 25px;
   font-family: 'Bree Serif', serif;
@@ -66,14 +66,14 @@ ul {
     float: right;
     padding-right: 45px;
     text-align: center;
-    color: papayawhip; }
+    color: papayawhip;
+    margin-top: 100px; }
   .jumbotron p {
     font-family: Raleway;
     text-shadow: 1px 1px black; }
 
 .links {
-  position: absolute;
-  margin-left: 200px; }
+  margin: 0 auto; }
   .links a {
     color: papayawhip; }
     .links a:hover {
@@ -108,8 +108,15 @@ ul {
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip; }
   #projects .mdl-card {
-    width: 250px;
-    z-index: 1; }
+    float: left;
+    margin-left: 50px;
+    width: 20%; }
+    #projects .mdl-card:after {
+      display: block;
+      clear: both;
+      height: 1px;
+      margin-top: -1px;
+      visibility: hidden; }
 
 #about {
   height: 100%;
@@ -175,9 +182,3 @@ footer {
   text-align: center;
   font-family: Raleway;
   font-weight: bold; }
-
-@media (min-width: 300) and (max-width: 1199px) {
-  #projects {
-    height: 300px;
-    width: 300px;
-    overflow: scroll; } }
