@@ -122,7 +122,11 @@ ul{
   float: left;
   margin-left: 50px;
   width: 20%;
- 
+  height: auto;
+  min-height: 80px;
+
+
+
   .icons{
     margin: 0 auto;
   }
@@ -142,24 +146,6 @@ ul{
 }
 
 
-
-  /*.card{
-    background-color: darkslategrey;
-    font-family: Raleway;
-    font-size: 12px;
-    box-shadow: 10px 10px 5px #888888;
-    color: ghostwhite;
-    width: 20%;
-
-    h4 {
-
-      font-family: Raleway;
-    }
-    img{
-
-      height: 200px;
-    }
-  }*/
 }
 
 #about{
@@ -248,3 +234,19 @@ footer{
   font-weight: bold;
 
 }
+
+@media (max-width: 1200px) { 
+
+  #projects{
+
+
+ overflow: scroll;
+}
+
+
+.blogShort{ border-bottom:1px solid #ddd;}
+.add{background: #333; padding: 10%; height: 300px;}
+
+}
+ h2{color:#34ca78;}
+ .margin10{margin-bottom:10px; margin-right:10px;}
