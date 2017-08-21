@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -57,7 +58,7 @@ ul {
   position: relative;
   -webkit-box-shadow: 10px 10px 5px #888888;
   box-shadow: 10px 10px 5px #888888;
-  height: 700px;
+  height: 500px;
   margin-top: 25px;
   border-radius: 25px;
   font-family: 'Bree Serif', serif;
@@ -84,12 +85,344 @@ ul {
   min-height: 100vh;
   width: 100%;
   padding-top: 40px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* .inner{
+
+       
+       backface-visibility: hidden;
+       position: absolute;
+
+      }
+        .front{
+        position: absolute;
+        background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+        backface-visibility: hidden;
+        width: 200px;
+        height: 300px;
+        
+     
+
+        }
+
+
+        .back{
+        
+        position: absolute;
+        background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+        width: 200px;
+        height: 300px;
+        top: 0;
+        left:0;
+        transform: translateY(-180deg);
+        
+    
+        }
+*/
+  /*
+
+
+  .card1{
+    position: relative;
+    height: 300px;
+    width: 200px;
+
+    .inner{
+      position: absolute;
+      height: 300px;
+      width: 200px;
+
+
+      .front{
+        position: absolute;
+
+        backface-visibility: hidden;
+        background-color: blue;
+
+      }
+      .back{
+        position: absolute;
+        background-color: silver;
+
+      }
+
+    }
+
+
+  }
+
+
+*/ }
   #projects h1 {
     padding: 10px;
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip; }
+  #projects .card-container {
+    padding: 40px, 80px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    cursor: pointer;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+  #projects .card-wrap {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    /*        border: 3px solid blue;
+*/
+    margin-left: 20px;
+    margin-top: 10px; }
+  #projects .card-stats {
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: translateY(40%);
+    -ms-transform: translateY(40%);
+    transform: translateY(40%);
+    -webkit-transition: 0.5s 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -o-transition: 0.5s 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: 0.5s 0.7s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  #projects .card {
+    /*  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);*/
+    background-image: url("../styles/stadium.jpg");
+    background-color: #333;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 15px;
+    height: 380px;
+    width: 240px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 240px;
+    -ms-flex: 0 0 240px;
+    flex: 0 0 240px;
+    overflow: hidden;
+    opacity: 0.8;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    z-index: 1;
+    -webkit-box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2), inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2), inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    -webkit-transform: translateY(-20px) scale(1, 1);
+    -ms-transform: translateY(-20px) scale(1, 1);
+    transform: translateY(-20px) scale(1, 1); }
+    #projects .card h2 {
+      color: lightcyan;
+      text-shadow: 2px 2px black;
+      font-family: "Press Start 2P", sans-serif;
+      -webkit-animation-name: mymove;
+      animation-name: mymove;
+      -webkit-animation-duration: 1.5s;
+      animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      padding-bottom: 45px; }
+    #projects .card p {
+      font-family: "Press Start 2P", sans-serif;
+      font-size: 14px;
+      color: ghostwhite;
+      text-shadow: 2px 2px dimgrey;
+      width: 85%;
+      margin: 0 auto; }
+    #projects .card:hover {
+      opacity: 1;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+      box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px; }
+      #projects .card:hover .card-stats {
+        -webkit-transform: translateY(-80px);
+        -ms-transform: translateY(-80px);
+        transform: translateY(-80px); }
+  #projects .card2 {
+    /*  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);*/
+    background-image: url("../styles/usdcrop.jpg");
+    background-color: #333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 15px;
+    height: 380px;
+    width: 240px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 240px;
+    -ms-flex: 0 0 240px;
+    flex: 0 0 240px;
+    overflow: hidden;
+    opacity: 0.8;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    /*  line-height: 100px;*/
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    z-index: 1;
+    -webkit-box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2), inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2), inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    -webkit-transform: translateY(-20px) scale(1, 1);
+    -ms-transform: translateY(-20px) scale(1, 1);
+    transform: translateY(-20px) scale(1, 1); }
+    #projects .card2 a {
+      color: maroon; }
+    #projects .card2 h2 {
+      color: darkslategrey;
+      text-shadow: 1px 1px black;
+      font-family: "Saira Semi Condensed", sans-serif;
+      font-weight: bold;
+      /* font-size: 80%;*/
+      text-align: center;
+      margin-top: 170px; }
+    #projects .card2 p {
+      font-family: "Lato", sans-serif;
+      font-weight: bold;
+      color: maroon;
+      font-size: 22px;
+      color: maroon;
+      /*text-shadow: 2px 2px dimgrey;*/
+      width: 85%;
+      margin: 0 auto;
+      margin-bottom: 20px; }
+    #projects .card2:hover {
+      opacity: 1;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+      box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px; }
+      #projects .card2:hover .card-stats {
+        -webkit-transform: translateY(-80px);
+        -ms-transform: translateY(-80px);
+        transform: translateY(-80px); }
+  #projects .card3 {
+    background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background-image: url("../styles/contactlist.png");
+    background-color: #333;
+    background-size: 350px 205px;
+    background-repeat: no-repeat;
+    background-position: 10px 100px;
+    position: relative;
+    border-radius: 15px;
+    height: 380px;
+    width: 240px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 240px;
+    -ms-flex: 0 0 240px;
+    flex: 0 0 240px;
+    overflow: hidden;
+    opacity: 0.8;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    z-index: 1;
+    -webkit-box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2), inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2), inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    -webkit-transform: translateY(-20px) scale(1, 1);
+    -ms-transform: translateY(-20px) scale(1, 1);
+    transform: translateY(-20px) scale(1, 1); }
+    #projects .card3 .card-bg {
+      position: absolute; }
+    #projects .card3 h2 {
+      color: lightcyan;
+      text-shadow: 2px 2px black;
+      font-family: 'Baloo Bhaijaan', cursive;
+      /* animation-name: mymove;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            padding-bottom: 45px;*/ }
+    #projects .card3 p {
+      font-family: sans-serif;
+      font-size: 14px;
+      color: ghostwhite;
+      text-shadow: 2px 2px dimgrey;
+      width: 85%;
+      margin: 0 auto;
+      margin-top: -15px; }
+    #projects .card3:hover {
+      opacity: 1;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+      box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+      /*.card-stats {
+                transform: translateY(-80px);
+            }*/ }
+  #projects .card4 {
+    background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background-image: url("../styles/coffee.jpg");
+    background-color: #333;
+    background-size: 100%;
+    background-repeat: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 15px;
+    height: 380px;
+    width: 240px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 240px;
+    -ms-flex: 0 0 240px;
+    flex: 0 0 240px;
+    overflow: hidden;
+    opacity: 0.8;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+    z-index: 1;
+    -webkit-box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2), inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2), inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    -webkit-transform: translateY(-20px) scale(1, 1);
+    -ms-transform: translateY(-20px) scale(1, 1);
+    transform: translateY(-20px) scale(1, 1); }
+    #projects .card4 h2 {
+      color: lightcyan;
+      text-shadow: 2px 2px black;
+      font-family: sans-serif;
+      /*animation-name: mymove;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            padding-bottom: 45px;*/ }
+    #projects .card4 p {
+      font-family: "Press Start 2P", sans-serif;
+      font-size: 14px;
+      color: ghostwhite;
+      text-shadow: 2px 2px dimgrey;
+      width: 85%;
+      margin: 0 auto; }
+    #projects .card4 a {
+      color: ghostwhite; }
+    #projects .card4:hover {
+      opacity: 1;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+      box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px; }
+      #projects .card4:hover .card-stats {
+        -webkit-transform: translateY(-80px);
+        -ms-transform: translateY(-80px);
+        transform: translateY(-80px); }
+
+@-webkit-keyframes mymove {
+  0% {
+    color: red; }
+  50% {
+    color: green; }
+  100% {
+    color: yellow; } }
+
+@keyframes mymove {
+  0% {
+    color: red; }
+  50% {
+    color: green; }
+  100% {
+    color: yellow; } }
   #projects .mdl-card {
     float: left;
     margin-left: 50px;
@@ -155,15 +488,7 @@ ul {
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;
-    margin-top: 50px; }
-
-.entry {
-  font-family: 'Bree Serif', serif;
-  border-left: 3px solid #f8f8f8;
-  margin-top: 25px;
-  padding-left: 25px;
-  background-color: darkslateblue;
-  width: 60%; }
+    margin-top: 100px; }
 
 footer {
   border-top: 1px solid black;
@@ -174,17 +499,5 @@ footer {
 
 @media (max-width: 1200px) {
   #projects {
-    overflow: scroll; }
-  .blogShort {
-    border-bottom: 1px solid #ddd; }
-  .add {
-    background: #333;
-    padding: 10%;
-    height: 300px; } }
-
-h2 {
-  color: #34ca78; }
-
-.margin10 {
-  margin-bottom: 10px;
-  margin-right: 10px; }
+    /*
+ overflow: scroll;*/ } }
