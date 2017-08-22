@@ -17,7 +17,11 @@ body {
 }
 
 body {
+
     background-color: silver;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 
@@ -51,9 +55,7 @@ ul {
         text-decoration: none;
         padding: 16px;
         color: white;
-        &:hover {
-            background-color: grey;
-        }
+
         &:visited {
             color: white;
         }
@@ -75,6 +77,7 @@ ul {
     border-radius: 25px;
     font-family: 'Bree Serif', serif;
     text-shadow: 2px 2px black;
+    margin: 0 auto;
 
     section {
         float: right;
@@ -101,456 +104,48 @@ ul {
     }
 }
 
-#projects {
-    height: 100%;
-    min-height: 100vh;
-    width: 100%;
-    padding-top: 40px;
-    margin: 0 auto;
-
-    h1 {
-        padding: 10px;
-        font-family: 'Bree Serif', serif;
-        padding-bottom: 3px;
-        text-shadow: 1px 1px papayawhip;
-    }
-
-
-    .card-container {
-        padding: 40px, 80px;
-        perspective: 500px;
-        cursor: pointer;
-        transform-style: preserve-3d;
-    }
-
-    .card-wrap {
-        position: relative;
-        height: 500px;
-        width: 100%;
-/*        border: 3px solid blue;
-*/        margin-left: 20px;
-        margin-top: 10px;
-    }
-
-    .card-stats {
-        position: absolute;
-        bottom: 0;
-        transform: translateY(40%);
-        transition: 0.5s 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
 
 
 
 
-    .card {
-        /*  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);*/
-        background-image: url('../styles/stadium.jpg');
-        background-color: #333;
+
+.underline {
+    background-image: linear-gradient(45deg, silver 0%, #darkslategrey 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    &:hover {
         background-size: 100% 100%;
-        background-repeat: no-repeat;
-
-        position: relative;
-        border-radius: 15px;
-        height: 380px;
-        width: 240px;
-        flex: 0 0 240px;
-        overflow: hidden;
         opacity: 0.8;
-
-
-        margin-left: 50px;
-        margin-top: 50px;
-        text-align: center;
-        color: white;
-        line-height: 100px;
-
-        perspective: 500px;
-        z-index: 1;
-        box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2),
-        inset #333 0 0 0 5px,
-        inset rgba(white, 0.5) 0 0 0 6px;
-        transform: translateY(-20px) scale(1, 1);
-
-
-        h2 {
-            color: lightcyan;
-            text-shadow: 2px 2px black;
-            font-family: "Press Start 2P", sans-serif;
-            animation-name: mymove;
-            animation-duration: 1.5s;
-            animation-iteration-count: infinite;
-            padding-bottom: 45px;
-        }
-        p {
-            font-family: "Press Start 2P", sans-serif;
-            font-size: 14px;
-            color: ghostwhite;
-            text-shadow: 2px 2px dimgrey;
-            width: 85%;
-            margin: 0 auto;
-        }
-
-
-        &:hover {
-            opacity: 1;
-            box-shadow: rgba(white, 0.2) 0 0 40px 5px,
-            rgba(white, 1) 0 0 0 1px,
-            rgba(black, 0.66) 0 30px 60px 0,
-            inset #333 0 0 0 5px,
-            inset white 0 0 0 6px;
-            .card-stats {
-                transform: translateY(-80px);
-            }
-        }
-    }
-
-    .card2 {
-        /*  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);*/
-        background-image: url('../styles/usdcrop.jpg');
-        background-color: #333;
-        background-size:  cover;
-        background-repeat: no-repeat;
-
-        position: relative;
-        border-radius: 15px;
-        height: 380px;
-        width: 240px;
-        flex: 0 0 240px;
-        overflow: hidden;
-        opacity: 0.8;
-
-
-        margin-left: 50px;
-        margin-top: 50px;
-        text-align: center;
-        color: white;
-        /*  line-height: 100px;*/
-        perspective: 500px;
-        z-index: 1;
-        box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2),
-        inset #333 0 0 0 5px,
-        inset rgba(white, 0.5) 0 0 0 6px;
-        transform: translateY(-20px) scale(1, 1);
-
-        a{
-            color:maroon;
-        }
-
-        h2 {
-            color: darkslategrey;
-            text-shadow: 1px 1px black;
-            font-family: "Saira Semi Condensed", sans-serif;
-            font-weight: bold;
-            /* font-size: 80%;*/
-            text-align: center;
-            margin-top: 170px;
-        }
-        p {
-            font-family: "Lato", sans-serif;
-            font-weight: bold;
-            color: maroon;
-            font-size: 22px;
-
-            color: maroon;
-            /*text-shadow: 2px 2px dimgrey;*/
-            width: 85%;
-            margin: 0 auto;
-            margin-bottom: 20px;
-
-        }
-
-
-         &:hover {
-            opacity: 1;
-            box-shadow: rgba(white, 0.2) 0 0 40px 5px,
-            rgba(white, 1) 0 0 0 1px,
-            rgba(black, 0.66) 0 30px 60px 0,
-            inset #333 0 0 0 5px,
-            inset white 0 0 0 6px;
-            .card-stats {
-                transform: translateY(-80px);
-            }
-        }
-    }
-
-    .card3 {
-        background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-        background-image: url('../styles/contactlist.png');
-        background-color: #333;
-        background-size:  350px 205px;
-        background-repeat: no-repeat;
-        background-position: 10px 100px;
-
-
-
-        position: relative;
-        border-radius: 15px;
-        height: 380px;
-        width: 240px;
-        flex: 0 0 240px;
-        overflow: hidden;
-        opacity: 0.8;
-
-
-        margin-left: 50px;
-        margin-top: 50px;
-        text-align: center;
-        color: white;
-        line-height: 100px;
-
-        perspective: 500px;
-        z-index: 1;
-        box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2),
-        inset #333 0 0 0 5px,
-        inset rgba(white, 0.5) 0 0 0 6px;
-        transform: translateY(-20px) scale(1, 1);
-        .card-bg{
-            position: absolute;
-        }
-
-        h2 {
-            color: lightcyan;
-            text-shadow: 2px 2px black;
-             font-family: 'Baloo Bhaijaan', cursive;
-           /* animation-name: mymove;
-            animation-duration: 1.5s;
-            animation-iteration-count: infinite;
-            padding-bottom: 45px;*/
-        }
-        p {
-            font-family:  sans-serif;
-            font-size: 14px;
-            color: ghostwhite;
-            text-shadow: 2px 2px dimgrey;
-            width: 85%;
-            margin: 0 auto;
-            margin-top: -15px;
-        }
-
-
-        &:hover {
-
-
-            opacity: 1;
-            box-shadow: rgba(white, 0.2) 0 0 40px 5px,
-            rgba(white, 1) 0 0 0 1px,
-            rgba(black, 0.66) 0 30px 60px 0,
-            inset #333 0 0 0 5px,
-            inset white 0 0 0 6px;
-            /*.card-stats {
-                transform: translateY(-80px);
-            }*/
-        }
-    }
-
-    .card4 {
-        background: linear-gradient(45deg, #cedce7 0%,#596a72 100%);
-        background-image: url('../styles/coffee.jpg');
-        background-color: #333;
-        background-size: 100%;
-        background-repeat: cover;
-        background-attachment: fixed;
-
-        position: relative;
-        border-radius: 15px;
-        height: 380px;
-        width: 240px;
-        flex: 0 0 240px;
-        overflow: hidden;
-        opacity: 0.8;
-
-
-        margin-left: 50px;
-        margin-top: 50px;
-        text-align: center;
-        color: white;
-        line-height: 100px;
-
-        perspective: 1500px;
-        z-index: 1;
-        box-shadow: 0 11px 18px rgba(0, 0, 0, 0.2),
-        inset #333 0 0 0 5px,
-        inset rgba(white, 0.5) 0 0 0 6px;
-        transform: translateY(-20px) scale(1, 1);
-
-
-        h2 {
-            color: lightcyan;
-            text-shadow: 2px 2px black;
-            font-family: sans-serif;
-            /*animation-name: mymove;
-            animation-duration: 1.5s;
-            animation-iteration-count: infinite;
-            padding-bottom: 45px;*/
-        }
-        p {
-            font-family: "Press Start 2P", sans-serif;
-            font-size: 14px;
-            color: ghostwhite;
-            text-shadow: 2px 2px dimgrey;
-            width: 85%;
-            margin: 0 auto;
-        }
-        a{
-            color: ghostwhite;
-        }
-
-
-        &:hover {
-            opacity: 1;
-            box-shadow: rgba(white, 0.2) 0 0 40px 5px,
-            rgba(white, 1) 0 0 0 1px,
-            rgba(black, 0.66) 0 30px 60px 0,
-            inset #333 0 0 0 5px,
-            inset white 0 0 0 6px;
-            .card-stats {
-                transform: translateY(-80px);
-            }
-        }
-    }
-
-
-
-
-    @keyframes mymove {
-        0% {
-            color: red;
-        }
-        50% {
-            color: green;
-        }
-        100% {
-            color: yellow;
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* .inner{
-
-       
-       backface-visibility: hidden;
-       position: absolute;
-
-      }
-        .front{
-        position: absolute;
-        background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-        backface-visibility: hidden;
-        width: 200px;
-        height: 300px;
-        
-     
-
-        }
-
-
-        .back{
-        
-        position: absolute;
-        background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-        width: 200px;
-        height: 300px;
-        top: 0;
-        left:0;
-        transform: translateY(-180deg);
-        
-    
-        }
-*/
-    /*
-
-
-  .card1{
-    position: relative;
-    height: 300px;
-    width: 200px;
-
-    .inner{
-      position: absolute;
-      height: 300px;
-      width: 200px;
-
-
-      .front{
-        position: absolute;
-
-        backface-visibility: hidden;
-        background-color: blue;
-
-      }
-      .back{
-        position: absolute;
-        background-color: silver;
-
-      }
-
-    }
-
-
-  }
-
-
-*/
-    .mdl-card {
-        float: left;
-        margin-left: 50px;
-        width: 20%;
-        height: auto;
-        min-height: 80px;
-
-
-
-        .icons {
-            margin: 0 auto;
-        }
-        p {
-            height: 120px;
-        }
-
-        &:after {
-            display: block;
-            clear: both;
-            height: 1px;
-            margin-top: -1px;
-            visibility: hidden;
-        }
     }
 }
 
+
+
+
+
+
 #about {
-    height: 100%;
+    height: 100vh;
     min-height: 100vh;
-    width: 100%;
+    margin: 0 auto;
     font-family: Raleway;
 
     h1 {
         padding: 10px;
+        padding-bottom: 3px;
         width: 100%;
 
         font-family: 'Bree Serif', serif;
-        padding-bottom: 3px;
+        
         text-shadow: 1px 1px papayawhip;
         margin-top: 50px;
         font-family: 'Bree Serif', serif;
     }
+
+
+
 
     article {
         height: 450px;
@@ -584,6 +179,53 @@ ul {
     }
 }
 
+
+#projects {
+    height: 100vh;
+    min-height: 100vh;
+  
+    margin: 0 auto;
+
+
+    h1 {
+        padding: 10px;
+        padding-bottom: 3px;
+        width: 100%;
+
+        font-family: 'Bree Serif', serif;
+        
+        text-shadow: 1px 1px papayawhip;
+        margin-top: 50px;
+        font-family: 'Bree Serif', serif;
+    }
+  /*  .projectImg {
+
+
+        height: 200px;
+        width: 40%;
+    }
+    .projectAbout {
+        height: 200px;
+        width: 60%;
+    }*/
+}
+
+
+.project1 {
+    height: 50vh;
+    min-height: 50vh;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+
+
+
+    h2 {
+        font-family: 'Bree Serif', serif;
+        padding-left: 30px;
+    }
+}
+
 #posts {
     height: 500px;
     min-height: 100vh;
@@ -614,5 +256,17 @@ footer {
     #projects {
         /*
  overflow: scroll;*/
+    }
+}
+
+
+.underline {
+    background-image: linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 88%;
+    transition: background-size 0.25s ease-in;
+    &:hover {
+        background-size: 100% 88%;
     }
 }
