@@ -6,20 +6,25 @@ body {
   /*
     margin: 0 auto;*/ }
 
-.nav {
-  height: 30px;
+nav {
+  height: 40px;
   width: 100%;
   margin: 0px;
   overflow: hidden;
   background-color: #333;
   position: fixed;
-  top: 0;
+  color: silver;
   width: 100%;
   top: 0;
   left: 0;
   font-family: Raleway;
-  font-size: 12px;
+  font-size: 14px;
   z-index: 5; }
+  nav a {
+    color: silver;
+    font-family: Lato; }
+  nav:hover {
+    color: silver; }
 
 ul {
   background-color: #464b4d;
@@ -49,6 +54,7 @@ ul {
   -webkit-box-shadow: 10px 10px 5px #888888;
   box-shadow: 10px 10px 5px #888888;
   height: 500px;
+  width: 95%;
   margin-top: 25px;
   border-radius: 25px;
   font-family: 'Bree Serif', serif;
@@ -86,17 +92,19 @@ ul {
     opacity: 0.8; }
 
 #about {
-  height: 100vh;
-  min-height: 100vh;
+  height: 600px;
   margin: 0 auto;
-  font-family: Raleway; }
+  margin-bottom: 20px;
+  font-family: Raleway;
+  position: relative;
+  overflow: hidden; }
   #about h1 {
     padding: 10px;
     padding-bottom: 3px;
     width: 100%;
     font-family: 'Bree Serif', serif;
     text-shadow: 1px 1px papayawhip;
-    margin-top: 50px;
+    margin-top: 30px;
     font-family: 'Bree Serif', serif; }
   #about article {
     height: 450px;
@@ -125,21 +133,29 @@ ul {
       padding: 5px;
       padding-left: 10px; }
 
-#projects h1 {
-  padding: 10px;
-  padding-bottom: 3px;
-  font-family: 'Bree Serif', serif;
-  text-shadow: 1px 1px papayawhip;
-  margin-top: 30px;
-  font-family: 'Bree Serif', serif; }
+#projects {
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  /*    padding-top: 20px;*/ }
+  #projects h1 {
+    padding: 10px;
+    padding-bottom: 3px;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 1px 1px papayawhip;
+    margin-top: 30px; }
 
 .projects {
-  height: 600px;
+  height: 500px;
   width: 90%;
-  margin: 0 auto;
-  overflow-y: scroll;
   background-color: oldlace;
   border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px 6px #888888;
+  box-shadow: 5px 5px 5px 6px #888888;
+  overflow-y: scroll;
+  margin: 0 auto;
   /*  .projectImg {
 
 
@@ -184,6 +200,9 @@ ul {
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;
     margin-top: 100px; }
+  #posts section {
+    width: 85%;
+    border: 1px solid papayawhip; }
 
 footer {
   border-top: 1px solid black;
@@ -191,11 +210,6 @@ footer {
   text-align: center;
   font-family: Raleway;
   font-weight: bold; }
-
-@media (max-width: 1200px) {
-  #projects {
-    /*
- overflow: scroll;*/ } }
 
 .underline {
   background-image: -webkit-linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);

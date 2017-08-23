@@ -13,22 +13,31 @@ body {
 
 
 
-.nav {
-    height: 30px;
+nav {
+    height: 40px;
     width: 100%;
     margin:0px;
     overflow: hidden;
     background-color: #333;
     position: fixed; 
-    top: 0; 
+    color: silver;
+ 
     width: 100%;
     top:0;
     left:0;
 
     font-family: Raleway;
-    font-size: 12px;
+    font-size: 14px;
     z-index: 5;
 
+    a{
+        color: silver;
+        font-family: Lato;
+    }
+    &:hover{
+
+        color: silver;
+    }
 }
 
 
@@ -72,6 +81,7 @@ ul {
     position: relative;
     box-shadow: 10px 10px 5px #888888;
     height: 500px;
+    width: 95%;
     margin-top: 25px;
     border-radius: 25px;
     font-family: 'Bree Serif', serif;
@@ -106,8 +116,6 @@ ul {
 
 
 
-
-
 .underline {
     background-image: linear-gradient(45deg, silver 0%, #darkslategrey 100%);
     background-repeat: no-repeat;
@@ -126,10 +134,12 @@ ul {
 
 
 #about {
-    height: 100vh;
-    min-height: 100vh;
+    height: 600px;
     margin: 0 auto;
+    margin-bottom: 20px;
     font-family: Raleway;
+    position: relative;
+    overflow:hidden;
 
     h1 {
         padding: 10px;
@@ -139,7 +149,7 @@ ul {
         font-family: 'Bree Serif', serif;
         
         text-shadow: 1px 1px papayawhip;
-        margin-top: 50px;
+        margin-top: 30px;
         font-family: 'Bree Serif', serif;
     }
 
@@ -154,7 +164,6 @@ ul {
         border-radius: 15px;
         box-shadow: 5px 5px 5px 5px #888888;
         overflow-y: scroll;
-
         img {
             height: 300px;
             width: 325px;
@@ -180,28 +189,34 @@ ul {
 }
 
 #projects{
+     height: 500px;
+     overflow: hidden;
+     margin: 0 auto;
+     position: relative;
+ /*    padding-top: 20px;*/
+    
+   
      h1 {
         padding: 10px;
         padding-bottom: 3px;
-  
+        position: relative;
 
         font-family: 'Bree Serif', serif;
         
         text-shadow: 1px 1px papayawhip;
         margin-top: 30px;
-        font-family: 'Bree Serif', serif;
+       
     }
 }
 .projects {
-     height: 600px;
-    
-     width: 90%;
-     margin: 0 auto;
-     overflow-y: scroll;
-    
-
+  
+    height: 500px;
+    width: 90%;
     background-color: oldlace;
     border-radius: 15px;
+    box-shadow:  5px 5px 5px 6px #888888;
+    overflow-y: scroll;
+    margin: 0 auto;
 
 
     h1 {
@@ -257,6 +272,11 @@ ul {
         text-shadow: 1px 1px papayawhip;
         margin-top: 100px;
     }
+
+    section{
+        width: 85%;
+        border: 1px solid papayawhip;
+    }
 }
 
 
@@ -270,13 +290,7 @@ footer {
     font-weight: bold;
 }
 
-@media (max-width: 1200px) {
 
-    #projects {
-        /*
- overflow: scroll;*/
-    }
-}
 
 
 .underline {
