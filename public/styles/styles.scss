@@ -1,20 +1,5 @@
-$hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
-$returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 
-html,
-body {
-    min-height: 100vh;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    box-sizing: border-box;
-}
-
-* {
-    box-sizing: border-box;
-}
 
 body {
 
@@ -22,18 +7,28 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
+/*
+    margin: 0 auto;*/
 }
 
 
 
-nav {
+.nav {
     height: 30px;
     width: 100%;
-    position: fixed;
+    margin:0px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    top:0;
+    left:0;
+
     font-family: Raleway;
     font-size: 12px;
-    z-index: 2;
-    border-bottom: 1px solid #f8f8f8;
+    z-index: 5;
+
 }
 
 
@@ -41,6 +36,7 @@ nav {
 ul {
 
     background-color: #464b4d;
+    width: 100%;
 
 
     li {
@@ -49,6 +45,9 @@ ul {
         color: white;
         font-size: 18px;
         list-style: none;
+  
+        padding-bottom: 20px;
+
     }
     a {
         height: 100%;
@@ -172,6 +171,7 @@ ul {
             padding-top: 10px;
         }
         p {
+            font-family: 'Lato', serif;
             padding-bottom: 5px;
             padding: 5px;
             padding-left: 10px;
@@ -181,16 +181,21 @@ ul {
 
 
 #projects {
-    height: 100vh;
-    min-height: 100vh;
-  
-    margin: 0 auto;
+     height: 600px;
+    
+     width: 90%;
+     margin: 0 auto;
+     overflow-y: scroll;
+    
+
+    background-color: oldlace;
+    border-radius: 15px;
 
 
     h1 {
         padding: 10px;
         padding-bottom: 3px;
-        width: 100%;
+  
 
         font-family: 'Bree Serif', serif;
         
@@ -211,12 +216,14 @@ ul {
 }
 
 
-.project1 {
+/*.project1 {
     height: 50vh;
     min-height: 50vh;
-
+    width: 50vh;
+    display: block;
     box-sizing: border-box;
     margin: 0 auto;
+    position: relative;
 
 
 
@@ -224,7 +231,7 @@ ul {
         font-family: 'Bree Serif', serif;
         padding-left: 30px;
     }
-}
+}*/
 
 #posts {
     height: 500px;

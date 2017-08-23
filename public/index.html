@@ -5,13 +5,16 @@
     <title>Drew Thrasher</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+ 
     <script src="https://use.fontawesome.com/ffafbe8b8e.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway|Roboto|Saira+Semi+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
@@ -20,25 +23,20 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="nav justify-content-end ">
-            <span class="underline">   <li class="nav-item ">
-              
+    <nav class="nav">
+        <ul>
+            <li class="nav-item ">
                 <a class="nav-link" href="#">Home</a>
-               
+            </li> 
 
-            </li> </span>
-            <span class="underline">
             <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
             </li>
-             </span>
-            <span class="underline">
+        
             <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
             </li>
-                </span>
-            <span class="underline">
+             
             <li class="nav-item">
                 <a class="nav-link" href="#posts">Posts</a>
             </li>
@@ -47,7 +45,7 @@
     </nav>
 
     <div id="home">
-        <div class="jumbotron jumbotron-fluid " style="background-image: url(styles/utah10.jpg); background-size: 100%; background-repeat: no-repeat;  background-size: 100%;">
+        <div class="jumbotron jumbotron-fluid " style="background-image: url(styles/utah10.jpg); background-size: 100%; background-repeat: no-repeat;  background-size: cover;">
             <section>
                 <h1 class="display-3">Drew Thrasher</h1>
                 <p class="lead">Web Developer | Salt Lake City, UT </p>
@@ -60,6 +58,8 @@
         </div>
     </div>
     
+<div class="container-fluid">
+    <div class="row">
 
      <div id="about">
         <span class="underline">    <h1> About Me</h1>  </span>
@@ -72,50 +72,53 @@
         </article>
     </div>
     
-
-
-    <div id="projects">
-       <h1>Projects</h1>
-        <section class="projects">
-            <h2>Head Coach</h2>
-            <div class="project1">
-                <section class=" projectImg">
-                    <img class="img-fluid" src="styles/headcoach.png" style="height: 150px; width:150px">
-                </section>
-                <section class=" col-xs-7  projectAbout">
-                    <p>Lorem ipsum dolor sit amet, mel simul nullam ne, dicit soleat id vel. Ne ius error sententiae. Eros prima antiopam no per. Te eam audire impedit. Ne falli elaboraret nec. At ius nominavi consetetur elaboraret. Mentitum mnesarchum mediocritatem ei nec, regione utroque veritus est no. Nullam similique ad his. Eu duo soleat contentiones. </p>
-                </section>
-            </div>
-            <h2>Coffee locator</h2>
-            <div class=" project1">
-                <section class="  projectImg">
-                    <img class="img-fluid" src="styles/coffeelocator.png" style="height: 150px; width:150px">
-                </section>
-                <section class="   projectAbout">
-                    <p>Lorem ipsum dolor sit amet, mel simul nullam ne, dicit soleat id vel. Ne ius error sententiae. Eros prima antiopam no per. Te eam audire impedit. Ne falli elaboraret nec. At ius nominavi consetetur elaboraret. Mentitum mnesarchum mediocritatem ei nec, regione utroque veritus est no. Nullam similique ad his. Eu duo soleat contentiones. </p>
-                </section>
-            </div>
-            <h2>Dollar Converter </h2>
-            <div class="project1">
-                <section class=" col-md-5  projectImg">
-                    <img class="img-fluid" src="styles/usdcrop.jpg" style="height: 150px; width: 150px;">
-                </section>
-                <section class="col-md-7  projectAbout">
-                    <p>Lorem ipsum dolor sit amet, mel simul nullam ne, dicit soleat id vel. Ne ius error sententiae. Eros prima antiopam no per. Te eam audire impedit. Ne falli elaboraret nec. At ius nominavi consetetur elaboraret. Mentitum mnesarchum mediocritatem ei nec, regione utroque veritus est no. Nullam similique ad his. Eu duo soleat contentiones.</p>
-                </section>
-            </div>
+</div>
+  <h1>Projects</h1>
+<div id="projects" class="row">
+    <div class="col-sm-12">
+      
+        <!--     <section class="projects"> -->
+        <h2>Head Coach</h2>
+        <div class="project1">
+            <section class=" projectImg">
+                <img class="img-fluid" src="styles/headcoach.png" style="height: 150px; width:150px">
             </section>
-    </div>
-
-  
-
-<!--  
-    <div id="posts">
-        <div class="container-fluid">
-            <h1>Latest Posts</h1>
-            <iframe width="590" height="580" src="https://drewthrasherblog.wordpress.com/"></iframe>
+            <section class="   projectAbout">
+                <p>Lorem ipsum dolor sit amet, mel simul nullam ne, dicit soleat id vel. Ne ius error sententiae. Eros prima antiopam no per. Te eam audire impedit. Ne falli elaboraret nec. At ius nominavi consetetur elaboraret. Mentitum mnesarchum mediocritatem ei nec, regione utroque veritus est no. Nullam similique ad his. Eu duo soleat contentiones. </p>
+            </section>
         </div>
-    </div> -->
+        <h2>Coffee locator</h2>
+         <div class=" project1">
+            <section class="  projectImg">
+                <img class="img-fluid" src="styles/coffeelocator.png" style="height: 150px; width:150px">
+            </section>
+            <section class="   projectAbout">
+                <p>Lorem ipsum dolor sit amet, mel simul nullam ne, dicit soleat id vel. Ne ius error sententiae. Eros prima antiopam no per. Te eam audire impedit. Ne falli elaboraret nec. At ius nominavi consetetur elaboraret. Mentitum mnesarchum mediocritatem ei nec, regione utroque veritus est no. Nullam similique ad his. Eu duo soleat contentiones. </p>
+            </section>
+        </div>
+      <!--   <h2>Dollar Converter </h2>
+        <div class="project1">
+            <section class="  projectImg">
+                <img class="img-fluid" src="styles/usdcrop.jpg" style="height: 150px; width: 150px;">
+            </section>
+            <section class=" projectAbout">
+                <p>Lorem ipsum dolor sit amet, mel simul nullam ne, dicit soleat id vel. Ne ius error sententiae. Eros prima antiopam no per. Te eam audire impedit. Ne falli elaboraret nec. At ius nominavi consetetur elaboraret. Mentitum mnesarchum mediocritatem ei nec, regione utroque veritus est no. Nullam similique ad his. Eu duo soleat contentiones.</p>
+            </section>
+        </div>  -->
+    </div>
+</div>
+
+
+
+</div>
+
+ 
+    <div id="posts">
+        <div class="row">
+            <h1>Latest Posts</h1>
+        
+        </div>
+    </div>
     <!-- <footer>
 
 <i class="fa fa-copyright" aria-hidden="true"></i> Drew Thrasher and stuff 2017
