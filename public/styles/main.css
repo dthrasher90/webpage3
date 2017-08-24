@@ -3,8 +3,7 @@ body {
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
-  /*
-    margin: 0 auto;*/ }
+  margin: 0 auto; }
 
 nav {
   height: 40px;
@@ -92,9 +91,10 @@ ul {
     opacity: 0.8; }
 
 #about {
-  height: 600px;
+  height: 100vh;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px;*/
   font-family: Raleway;
   position: relative;
   overflow: hidden; }
@@ -134,7 +134,8 @@ ul {
       padding-left: 10px; }
 
 #projects {
-  height: 500px;
+  height: 1200px;
+  min-height: 100vh;
   overflow: hidden;
   margin: 0 auto;
   position: relative;
@@ -148,31 +149,46 @@ ul {
     margin-top: 30px; }
 
 .projects {
-  height: 500px;
-  width: 90%;
-  background-color: oldlace;
-  border-radius: 15px;
-  -webkit-box-shadow: 5px 5px 5px 6px #888888;
-  box-shadow: 5px 5px 5px 6px #888888;
-  overflow-y: scroll;
+  height: 100vh;
   margin: 0 auto;
-  /*  .projectImg {
-
-
-        height: 200px;
-        width: 40%;
-    }
-    .projectAbout {
-        height: 200px;
-        width: 60%;
-    }*/ }
+  padding: 15px;
+  overflow-y: scroll; }
+  .projects .media {
+    border: 2px solid black;
+    margin-top: 10px;
+    background-color: #F8F8FF;
+    -webkit-box-shadow: 3px 3px  #888888;
+    box-shadow: 3px 3px  #888888;
+    border-radius: 10px; }
+  .projects img {
+    border-radius: 5px;
+    border-right: 2px solid black; }
   .projects h1 {
     padding: 10px;
     padding-bottom: 3px;
+    text-align: center;
+    overflow: hidden;
     font-family: 'Bree Serif', serif;
     text-shadow: 1px 1px papayawhip;
     margin-top: 50px;
     font-family: 'Bree Serif', serif; }
+  .projects p {
+    font-family: 'Lato', serif;
+    font-size: 18px; }
+  .projects .projectImg {
+    height: 40vh;
+    width: 40%;
+    float: left;
+    padding-left: 25px;
+    padding-top: 35px;
+    margin: 0 auto;
+    overflow: hidden; }
+  .projects .projectAbout {
+    height: 40vh;
+    width: 60%;
+    font-family: 'Lato', serif;
+    margin: 0 auto;
+    overflow: hidden; }
 
 /*.project1 {
     height: 50vh;
@@ -191,18 +207,20 @@ ul {
     }
 }*/
 #posts {
-  height: 500px;
+  /* height: 500px;*/
   min-height: 100vh;
-  width: 100%; }
+  position: relative; }
   #posts h1 {
     padding: 10px;
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;
-    margin-top: 100px; }
-  #posts section {
-    width: 85%;
-    border: 1px solid papayawhip; }
+    margin-top: 40px; }
+  #posts .blogContainer {
+    width: 75%;
+    border: 1px solid papayawhip;
+    margin: 0 auto;
+    background-color: khaki; }
 
 footer {
   border-top: 1px solid black;

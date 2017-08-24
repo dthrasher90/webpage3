@@ -7,8 +7,7 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
-/*
-    margin: 0 auto;*/
+    margin: 0 auto;
 }
 
 
@@ -73,6 +72,8 @@ ul {
 #home {
 
     margin-top: 75px;
+
+ 
 }
 
 .jumbotron {
@@ -134,9 +135,10 @@ ul {
 
 
 #about {
-    height: 600px;
+    height: 100vh;
+    width: 100%;
     margin: 0 auto;
-    margin-bottom: 20px;
+   /* margin-bottom: 20px;*/
     font-family: Raleway;
     position: relative;
     overflow:hidden;
@@ -189,7 +191,8 @@ ul {
 }
 
 #projects{
-     height: 500px;
+     height: 1200px;
+     min-height: 100vh;
      overflow: hidden;
      margin: 0 auto;
      position: relative;
@@ -210,18 +213,31 @@ ul {
 }
 .projects {
   
-    height: 500px;
-    width: 90%;
-    background-color: oldlace;
-    border-radius: 15px;
-    box-shadow:  5px 5px 5px 6px #888888;
-    overflow-y: scroll;
-    margin: 0 auto;
+    height: 100vh;
 
+    margin: 0 auto;
+    padding: 15px;
+    overflow-y:scroll;
+
+   .media{
+    border: 2px solid black;
+    margin-top: 10px;
+    background-color:  #F8F8FF;
+    box-shadow:  3px 3px  #888888;
+    border-radius: 10px;
+
+    }
+    img{
+        border-radius: 5px;
+        border-right: 2px solid black;
+    }
+ 
 
     h1 {
         padding: 10px;
         padding-bottom: 3px;
+        text-align: center;
+        overflow:hidden;
   
 
         font-family: 'Bree Serif', serif;
@@ -230,16 +246,30 @@ ul {
         margin-top: 50px;
         font-family: 'Bree Serif', serif;
     }
-  /*  .projectImg {
 
+    p{
 
-        height: 200px;
+        font-family: 'Lato', serif;
+       font-size: 18px;
+    }
+    .projectImg {
+
+        height: 40vh;
         width: 40%;
+        float: left;
+        padding-left: 25px;
+        padding-top: 35px;
+        margin: 0 auto;
+         overflow:hidden;
     }
     .projectAbout {
-        height: 200px;
+        height: 40vh;
         width: 60%;
-    }*/
+        font-family: 'Lato', serif;
+        margin: 0 auto;
+         overflow:hidden;
+
+    }
 }
 
 
@@ -261,21 +291,24 @@ ul {
 }*/
 
 #posts {
-    height: 500px;
+   /* height: 500px;*/
     min-height: 100vh;
-    width: 100%;
+    position: relative;
+   
 
     h1 {
         padding: 10px;
         font-family: 'Bree Serif', serif;
         padding-bottom: 3px;
         text-shadow: 1px 1px papayawhip;
-        margin-top: 100px;
+        margin-top: 40px;
     }
 
-    section{
-        width: 85%;
+    .blogContainer{
+        width: 75%;
         border: 1px solid papayawhip;
+        margin: 0 auto;
+        background-color: khaki;
     }
 }
 
