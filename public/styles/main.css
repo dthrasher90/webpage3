@@ -134,7 +134,7 @@ ul {
       padding-left: 10px; }
 
 #projects {
-  height: 1200px;
+  height: 800px;
   min-height: 100vh;
   overflow: hidden;
   margin: 0 auto;
@@ -149,7 +149,7 @@ ul {
     margin-top: 30px; }
 
 .projects {
-  height: 100vh;
+  height: 1300px;
   margin: 0 auto;
   padding: 15px;
   overflow-y: scroll; }
@@ -159,7 +159,8 @@ ul {
     background-color: #F8F8FF;
     -webkit-box-shadow: 3px 3px  #888888;
     box-shadow: 3px 3px  #888888;
-    border-radius: 10px; }
+    border-radius: 10px;
+    overflow: hidden; }
   .projects img {
     border-radius: 5px;
     border-right: 2px solid black; }
@@ -175,52 +176,26 @@ ul {
   .projects p {
     font-family: 'Lato', serif;
     font-size: 18px; }
-  .projects .projectImg {
-    height: 40vh;
-    width: 40%;
-    float: left;
-    padding-left: 25px;
-    padding-top: 35px;
-    margin: 0 auto;
-    overflow: hidden; }
-  .projects .projectAbout {
-    height: 40vh;
-    width: 60%;
-    font-family: 'Lato', serif;
-    margin: 0 auto;
-    overflow: hidden; }
 
-/*.project1 {
-    height: 50vh;
-    min-height: 50vh;
-    width: 50vh;
-    display: block;
-    box-sizing: border-box;
-    margin: 0 auto;
-    position: relative;
-
-
-
-    h2 {
-        font-family: 'Bree Serif', serif;
-        padding-left: 30px;
-    }
-}*/
 #posts {
-  /* height: 500px;*/
-  min-height: 100vh;
-  position: relative; }
+  height: 1000px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px;
+  overflow-y: hidden; }
   #posts h1 {
     padding: 10px;
     font-family: 'Bree Serif', serif;
     padding-bottom: 3px;
     text-shadow: 1px 1px papayawhip;
-    margin-top: 40px; }
-  #posts .blogContainer {
-    width: 75%;
-    border: 1px solid papayawhip;
-    margin: 0 auto;
-    background-color: khaki; }
+    margin-top: 40px;
+    overflow: hidden; }
+  #posts .blog {
+    background-color: ghostwhite;
+    border: 2px solid black;
+    border-radius: 10px; }
+  #posts .postBody {
+    background-color: oldlace; }
 
 footer {
   border-top: 1px solid black;
