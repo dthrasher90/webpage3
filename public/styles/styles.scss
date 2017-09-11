@@ -1,315 +1,260 @@
+        body {
 
-
-
-body {
-
-    background-color: silver;
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    margin: 0 auto;
-}
-
-
-
-nav {
-    height: 40px;
-    width: 100%;
-    margin:0px;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; 
-    color: silver;
- 
-    width: 100%;
-    top:0;
-    left:0;
-
-    font-family: Raleway;
-    font-size: 14px;
-    z-index: 5;
-
-    a{
-        color: silver;
-        font-family: Lato;
-    }
-    &:hover{
-
-        color: silver;
-    }
-}
-
-
-
-ul {
-
-    background-color: #464b4d;
-    width: 100%;
-
-
-    li {
-        float: left;
-        width: 10%;
-        color: white;
-        font-size: 18px;
-        list-style: none;
-  
-        padding-bottom: 20px;
-
-    }
-    a {
-        height: 100%;
-        text-decoration: none;
-        padding: 16px;
-        color: white;
-
-        &:visited {
-            color: white;
-        }
-    }
-}
-
-#home {
-
-    margin-top: 75px;
-
- 
-}
-
-.jumbotron {
-    background-image: url(styles/utah10.jpg);
-    background-size: 100%;
-    position: relative;
-    box-shadow: 10px 10px 5px #888888;
-    height: 500px;
-    width: 95%;
-    margin-top: 25px;
-    border-radius: 25px;
-    font-family: 'Bree Serif', serif;
-    text-shadow: 2px 2px black;
-    margin: 0 auto;
-
-    section {
-        float: right;
-        padding-right: 45px;
-        text-align: center;
-        color: papayawhip;
-        margin-top: 100px;
-    }
-
-    p {
-        font-family: Raleway;
-        text-shadow: 1px 1px black;
-    }
-}
-
-.links {
-    margin: 0 auto;
-    a {
-        color: papayawhip;
-
-        &:hover {
-            color: saddlebrown;
-        }
-    }
-}
-
-
-
-
-.underline {
-    background-image: linear-gradient(45deg, silver 0%, #darkslategrey 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 3px;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
-    &:hover {
-        background-size: 100% 100%;
-        opacity: 0.8;
-    }
-}
-
-
-
-
-
-
-#about {
-    height: 100vh;
-    width: 100%;
-    margin: 0 auto;
-   /* margin-bottom: 20px;*/
-    font-family: Raleway;
-    position: relative;
-    overflow:hidden;
-
-    h1 {
-        padding: 10px;
-        padding-bottom: 3px;
-        width: 100%;
-
-        font-family: 'Bree Serif', serif;
-        
-        text-shadow: 1px 1px papayawhip;
-        margin-top: 30px;
-        font-family: 'Bree Serif', serif;
-    }
-
-
-
-
-    article {
-        height: 450px;
-        width: 90%;
-        background-color: ghostwhite;
-        margin: 0 auto;
-        border-radius: 15px;
-        box-shadow: 5px 5px 5px 5px #888888;
-        overflow-y: scroll;
-        img {
-            height: 300px;
-            width: 325px;
-            float: right;
-            padding: 30px;
-            margin-left: 50px;
-            margin-top: 10px;
-            border-left: 1px solid #f8f8f8;
+            background-color: white;
+            background-size: cover;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            margin: 0 auto;
+            box-sizing: border-box;
+         /*   max-width: 1200px;*/
         }
 
-        h3 {
+        .wrapper{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+
+
+        nav {
+            height: 30px;
+            width: 100%;
+            /*
+            display: block;*/
+            display: inline;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+
+            font-family: Raleway;
+            font-size: 14px;
+            z-index: 5;
+
+
+            ul {
+
+                width: 100%;
+
+
+                li {
+
+                    width: 8%;
+                    color: white;
+                    font-size: 18px;
+                    list-style: none;
+                    /*    display: inline-flex;*/
+                    float: left;
+                    display: inline;
+
+
+                    a {
+                        color: silver;
+
+                        font-family: Lato;
+
+                        &:hover {
+
+                            color: saddlebrown;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        #home {
+
+        }
+
+        .jumbotron {
+            background-image: url(styles/utah10.jpg);
+            background-size: 100%;
+            position: relative;
+            box-shadow: 10px 10px 5px #888888;
+            min-height: 95vh;
+            width: 95%;
+
+            border-radius: 15px;
             font-family: 'Bree Serif', serif;
-            margin-left: 10px;
-            padding-top: 10px;
+            text-shadow: 2px 2px black;
+            margin: 0 auto;
+
+            section {
+                float: right;
+                padding-right: 45px;
+                text-align: center;
+                color: papayawhip;
+                margin-top: 100px;
+            }
+
+            p {
+                font-family: Raleway;
+                text-shadow: 1px 1px black;
+            }
         }
-        p {
-            font-family: 'Lato', serif;
-            padding-bottom: 5px;
-            padding: 5px;
-            padding-left: 10px;
+
+        .links {
+            margin: 0 auto;
+            a {
+                color: papayawhip;
+
+                &:hover {
+                    color: saddlebrown;
+                }
+            }
         }
-    }
-}
 
-#projects{
-     height: 800px;
-     min-height: 100vh;
-     overflow: hidden;
-     margin: 0 auto;
-     position: relative;
- /*    padding-top: 20px;*/
-    
-   
-     h1 {
-        padding: 10px;
-        padding-bottom: 3px;
-        position: relative;
 
-        font-family: 'Bree Serif', serif;
-        
-        text-shadow: 1px 1px papayawhip;
-        margin-top: 30px;
-       
-    }
-}
-.projects {
-  
-    height: 1300px;
 
-    margin: 0 auto;
-    padding: 15px;
-    overflow-y:scroll;
 
-   .media{
-    border: 2px solid black;
-    margin-top: 10px;
-    background-color:  #F8F8FF;
-    box-shadow:  3px 3px  #888888;
-    border-radius: 10px;
-    overflow:hidden;
 
-    }
-    img{
-        border-radius: 5px;
-        border-right: 2px solid black;
-    }
+
+
+        #about {
+            min-height: 100vh;
+            width: 95%;
+            margin: 0 auto;
+            font-family: Raleway;
+            
+            overflow: auto;
+
+
+            h1 {
+                padding: 10px;
+                padding-bottom: 3px;
+                width: 100%;
+
+                font-family: 'Bree Serif', serif;
+
+                text-shadow: 1px 1px papayawhip;
+                margin-top: 30px;
+               
+            }
+
+
+
+
+            article {
+                height: 450px;
+                width: 100%;
+                /*      background-color: ghostwhite;*/
+                margin: 0 auto;
+                border-radius: 15px;
+            /*    box-shadow: 5px 5px 5px 5px #888888;*/
+           
+                display: flex;
+                flex-flow: column;
+               
+                img{
+                    height: 50px;
+                    width: 50px;
+                    float: right;
+                    padding: 30px;
+                    margin-left: 50px;
+                    margin-top: 10px;
+                    border-left: 1px solid #f8f8f8;
+                    flex:2;
+                }
+
+                h3 {
+                    font-family: 'Bree Serif', serif;
+                    margin-left: 10px;
+                    padding-top: 10px;
+
+                }
+                p {
+                    font-family: 'Lato', serif;
+                    padding-bottom: 5px;
+                    padding: 5px;
+                    padding-left: 10px;
+                    flex: 1;
+                }
+            }
+        }
+
+        #projects {
+
+            min-height: 100vh;
+            width: 95%;
+            margin: 0 auto;
+            font-family: Raleway;
+            overflow: auto;
+            display: flex;
+            flex-flow: column;
+
+
+            h1 {
  
+                padding: 10px;
+                padding-bottom: 3px;
+                width: 100%;
 
-    h1 {
-        padding: 10px;
-        padding-bottom: 3px;
-        text-align: center;
-        overflow:hidden;
-  
+                font-family: 'Bree Serif', serif;
 
-        font-family: 'Bree Serif', serif;
-        text-shadow: 1px 1px papayawhip;
-        margin-top: 50px;
-        font-family: 'Bree Serif', serif;
-    }
+                text-shadow: 1px 1px papayawhip;
+                margin-top: 30px;
+               /* margin-left: 30px;*/
+               
+            }
 
-    p{
+            .project{
 
-        font-family: 'Lato', serif;
-       font-size: 18px;
-    }
+                height: 85vh;
+                width: 100%;
+                margin: auto;
+                padding: 15px;
+                overflow: auto;
+                border-radius: 15px;
+                margin-top: 15px;
 
-}
+                border: 3px solid lime;
+                background-color: dimgrey;
+                font-family: Raleway;
+               
+           
+                p{
 
+                    height:25vh;
+                    width: 65%;
+                    overflow: hidden;
+                    font-family: Raleway;
+                    border: 3px solid blue;
+                    color: white;
+                }
+                img{
+                     margin: auto;
+                     width: 50%;
 
+                }
 
-#posts {
-    height: 1000px;
-    width: 95%;
-    margin: 0 auto;
-    padding: 15px;
-    overflow-y:hidden;
-
-   
-
-    h1 {
-        padding: 10px;
-        font-family: 'Bree Serif', serif;
-        padding-bottom: 3px;
-        text-shadow: 1px 1px papayawhip;
-        margin-top: 40px;
-        overflow: hidden;
-
-    }
-    .blog{
-        background-color: ghostwhite;
-        border: 2px solid black;
-        border-radius: 10px;
-    }
-
-    .postBody{
-
-        background-color: oldlace;
-    }
-
-
-}
+        }
+     }
 
 
 
 
-footer {
-    border-top: 1px solid black;
-    height: 50px;
-    text-align: center;
-    font-family: Raleway;
-    font-weight: bold;
-}
+
+
+
+        footer {
+            border-top: 1px solid black;
+            height: 30px;
+            text-align: center;
+            font-family: Raleway;
+            font-weight: bold;
+            margin-top: 30px;
+        }
 
 
 
 
-.underline {
-    background-image: linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 3px;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
-    &:hover {
-        background-size: 100% 88%;
-    }
-}
+        .underline {
+            background-image: linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 3px;
+            background-position: 0 88%;
+            transition: background-size 0.25s ease-in;
+            &:hover {
+                background-size: 100% 88%;
+            }
+        }
