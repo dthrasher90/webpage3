@@ -3,7 +3,7 @@ body {
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
-  margin: 0 auto;
+  /*    margin: 0 auto;*/
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /*   max-width: 1200px;*/ }
@@ -78,7 +78,7 @@ nav {
       color: saddlebrown; }
 
 #about {
-  min-height: 100vh;
+  min-height: 450px;
   width: 95%;
   margin: 0 auto;
   font-family: Raleway;
@@ -91,12 +91,9 @@ nav {
     text-shadow: 1px 1px papayawhip;
     margin-top: 30px; }
   #about article {
-    height: 450px;
+    height: 100%;
     width: 100%;
-    /*      background-color: ghostwhite;*/
     margin: 0 auto;
-    border-radius: 15px;
-    /*    box-shadow: 5px 5px 5px 5px #888888;*/
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -105,8 +102,7 @@ nav {
     -webkit-box-direction: normal;
     -webkit-flex-flow: column;
     -ms-flex-flow: column;
-    flex-flow: column;
-    margin-bottom: 1px solid black; }
+    flex-flow: column; }
     #about article img {
       height: 50px;
       width: 50px;
@@ -135,10 +131,9 @@ nav {
 
 #projects {
   min-height: 100vh;
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
+  /* margin: 0 auto;*/
   font-family: Raleway;
-  overflow: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -147,8 +142,6 @@ nav {
   -webkit-box-direction: normal;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
-  flex-flow: column;
-  display: flex;
   flex-flow: column; }
   #projects h1 {
     padding: 10px;
@@ -157,25 +150,27 @@ nav {
     font-family: 'Bree Serif', serif;
     text-shadow: 1px 1px papayawhip;
     margin-top: 30px; }
+  #projects .coffee {
+    background-color: purple; }
   #projects .project {
-    height: 90vh;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     padding: 15px;
-    overflow: auto;
-    border-radius: 15px;
-    margin-top: 15px;
     background-color: dimgrey;
     font-family: Raleway; }
     #projects .project p {
-      height: 25vh;
+      height: 100px;
       width: 75%;
       overflow: hidden;
       font-family: Raleway;
-      color: white; }
+      font-weight: 400;
+      line-height: 1.5;
+      color: #292b2c;
+      height: auto;
+      margin-top: 20px; }
     #projects .project img {
       margin: auto;
-      width: 50%; }
+      width: 100% !important; }
     #projects .project .links {
       height: 10vh;
       width: 25%; }
