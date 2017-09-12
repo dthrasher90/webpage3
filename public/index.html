@@ -5,9 +5,6 @@
     <title>Drew Thrasher</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src=" https://use.fontawesome.com/ffafbe8b8e.js "></script>
     <link href="https://fonts.googleapis.com/css?family=Lato|Bree+Serif|Raleway|Roboto|Saira+Semi+Condensed " rel="stylesheet ">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan " rel="stylesheet ">
@@ -24,12 +21,11 @@
             <li><a href="#posts ">Contact</a></li>
         </ul>
     </nav>
-    </nav>
     <div id="home ">
-        <div class="jumbotron jumbotron-fluid " style="background-image: url(styles/utah10.jpg); background-size: 100%; background-repeat: no-repeat; background-size: cover; ">
+        <div class="jumbotron" style="background-image: url(styles/utah10.jpg); background-size: 100%; background-repeat: no-repeat; background-size: cover; ">
             <section>
-                <h1 class="display-3 ">Drew Thrasher</h1>
-                <p class="lead ">Web Developer | Salt Lake City, UT </p>
+                <h1>Drew Thrasher</h1>
+                <h2>Web Developer | Salt Lake City, UT </h2>
                 <div class="links ">
                     <a href="mailto:dthrasher90@gmail.com?Subject=Hello%20again " target="_blank ">  <i class="fa fa-envelope fa-2x " aria-hidden="true "></i></a>
                     <a href="https://github.com/dthrasher90/ " target="_blank "> <i class="fa fa-github fa-2x " aria-hidden="true "></i></a>
@@ -42,49 +38,46 @@
         <div id="about">
             <h1> About Me</h1>
             <article>
-                <h3>About my work</h3>
                 <img class="img-fluid" src="styles/family2.jpg" style="height: 300px; width: 300px;">
-                <p>My name is Drew. I am a web developer, I can do anything HTML, CSS and JavaScript. Recently I’ve fallen in love with Sass and Angular 4. I have posted some of my projects online. My current project is called Head Coach, it’s a football based RPG, still being tweaked, but perhaps it's the only one of its kind on the web! You can see some of my other projects on my project section.</p>
                 <h3>A little about me...</h3>
-                <p>My family and I currently reside in Fairbanks, AK, we are planning to move to the SLC Valley towards the end of September. We enjoy all the outdoor activities Utah has to offer. Personally, I am into sports, namely football, I am a huge Carolina Panthers fan and SEC football in the college ranks. Oh yes, I drink lots of coffee (check out Bones Coffee!), one may say I am an addict, but that’s debate able.</p>
+                <p>My family and I currently reside in Fairbanks, AK, we are planning to move to the SLC Valley towards the end of September. We enjoy all the outdoor activities Utah has to offer. Personally, I am into sports, namely football, I am a huge Carolina Panthers fan and SEC football in the college ranks. Oh yes, I drink lots of coffee (check out Bones Coffee!), one may say I am an addict, but that’s debatable.</p>
+                <h3>About my work...</h3>
+                <p>My name is Drew. I am a web developer, I can do anything HTML, CSS and JavaScript. Recently I’ve fallen in love with Sass and Angular 4. I have posted some of my projects online. My current project is called Head Coach, it’s a football based RPG, still being tweaked, but perhaps it's the only one of its kind on the web! You can see some of my other projects on my project section.</p>
             </article>
         </div>
         <div id="projects">
             <h1>Projects</h1>
-
-
-
             <div class="project coffee">
-                <section>
-                    <img \ src="styles/coffeelocator.png ">
-                    <p> Coffee Locator is a simple JS app. It utilizes the Four Square API, which finds all the local coffee houses in the area. It also shows popularity based on the number of check-ins registered by Four Square. JQuery handles all the JSON request and the library also plots the map markers. I used Google maps api to set the markers correctly. The app is built with Bootstrap.
-                    </p>
-                    <div class="links">
-                        <a href="https://github.com/dthrasher90/coffeefinder" target="_blank"> <i class="fa fa-github fa-2x " aria-hidden="true "></i></a>
-                        <a href="https://coffeelocator.herokuapp.com/" target="_blank"><button>Click</button></a>
-                    </div>
-                </section>
+                <img src="styles/coffeelocator.png ">
+                <p> Coffee Locator is a simple JS app. It utilizes the Four Square API, which finds all the local coffee houses in the area. It also shows popularity based on the number of check-ins registered by Four Square. JQuery handles all the JSON request and the library also plots the map markers. I used Google maps api to set the markers correctly. The app is built with Bootstrap.
+                </p>
+                <div class="links">
+                    <a href="https://github.com/dthrasher90/coffeefinder" target="_blank"> <i class="fa fa-github fa-2x " aria-hidden="true "></i></a>
+                    <a href="https://coffeelocator.herokuapp.com/" target="_blank">
+                        <button>Click</button>
+                    </a>
+                </div>
             </div>
-
-
-
             <div class="project football">
-                <img  src="styles/playerselect.png " >
+                <img src="styles/playerselect.png ">
                 <p> Head Coach is an ambitious football/RPG HTML5 video game project. I utilized several different systems to make this work. Foremost, it is built off of AngularJS framework, I make use of the two-way data binding to display many of the stats and player names. The player select screen uses a library called ChanceJS. The random data is nested in a for loop and it is displayed on a card system, which allows the user to select players to his team. The data uses local storage to save and load as the screens change. The web canvas uses PhaserJS library for the animations. The goal of the game, is for the player “coach” his team during the game to for a chance of bonuses, or skill increases. This was an original concept.
                 </p>
                 <div class="links">
                     <a href="https://github.com/dthrasher90/football5" target="_blank"> <i class="fa fa-github fa-2x " aria-hidden="true "></i></a>
-                    <a href="https://football5.herokuapp.com/#!/"  target="_blank"><button>Click</button></a>
+                    <a href="https://football5.herokuapp.com/#!/" target="_blank">
+                        <button>Click</button>
+                    </a>
                 </div>
             </div>
             <div class="project">
-                <img class="img-fluid" src="styles/contactlist.png" style="height: 68%; width: 55%;">
+                <img  src="styles/contactlist.png" >
                 <p>This is a simple MEAN stack contact list. I utilized mongoose to create a schema and database for the app to work effectively. It runs off an AngularJS frame work, which allows for the two-way data binding to reflect the correct information. The search bar is also optimized with AngularJS, searching both first and last names. The contact list is fully customizable, in which you can add as many fields as necessary. Finally, I used Bootstrap 4 card decks to make it user-friendly.
                 </p>
                 <div class="links">
                     <a href="https://github.com/dthrasher90/contact2" target="_blank"> <i class="fa fa-github fa-2x " aria-hidden="true "></i></a>
-
-                     <a href="https://contact4.herokuapp.com/" target="_blank"><button>Click</button></a>
+                    <a href="https://contact4.herokuapp.com/" target="_blank">
+                        <button>Click</button>
+                    </a>
                 </div>
             </div>
             <div class="project">
@@ -93,17 +86,18 @@
                 </p>
                 <div class="links">
                     <a href="https://github.com/dthrasher90/currency" target="_blank"> <i class="fa fa-github fa-2x " aria-hidden="true "></i></a>
-                    <a href="https://usdconverter.herokuapp.com/" target="_blank"><button>Click</button></a>
+                    <a href="https://usdconverter.herokuapp.com/" target="_blank">
+                        <button>Click</button>
+                    </a>
                 </div>
             </div>
         </div>
         <div id="contact ">
             <h1>Contact Info</h1>
         </div>
-    </div>
-    <footer>
-        <i class="fa fa-copyright " aria-hidden="true "></i> Drew Thrasher and stuff 2017
-    </footer>
+        <footer>
+            <i class="fa fa-copyright " aria-hidden="true "></i> Drew Thrasher and stuff 2017
+        </footer>
 </body>
 
 </html>

@@ -1,62 +1,43 @@
 body {
-  background-color: white;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  /*    margin: 0 auto;*/
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  /*   max-width: 1200px;*/ }
+  background-color: white; }
 
-.wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  width: 100%; }
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 nav {
-  height: 30px;
-  width: 100%;
-  /*
-            display: block;*/
-  display: inline;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  font-family: Raleway;
-  font-size: 14px;
-  z-index: 5; }
+  background-color: black; }
   nav ul {
-    width: 100%; }
+    list-style-type: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
     nav ul li {
-      width: 8%;
+      text-decoration: none;
+      text-align: center;
       color: white;
-      font-size: 18px;
-      list-style: none;
-      /*    display: inline-flex;*/
-      float: left;
-      display: inline; }
+      font-size: 18px; }
       nav ul li a {
+        text-decoration: none;
+        text-align: center;
         color: silver;
-        font-family: Lato; }
+        display: block;
+        font-family: Lato;
+        padding: 0px 15px 0px 15px; }
         nav ul li a:hover {
-          color: saddlebrown; }
+          color: saddlebrown;
+          background-color: silver; }
 
 .jumbotron {
-  background-image: url(styles/utah10.jpg);
-  background-size: 100%;
-  position: relative;
-  -webkit-box-shadow: 10px 10px 5px #888888;
-  box-shadow: 10px 10px 5px #888888;
-  min-height: 95vh;
-  width: 95%;
-  border-radius: 15px;
+  min-height: 90vh;
+  width: 100%;
   font-family: 'Bree Serif', serif;
   text-shadow: 2px 2px black;
   margin: 0 auto; }
@@ -66,6 +47,8 @@ nav {
     text-align: center;
     color: papayawhip;
     margin-top: 100px; }
+  .jumbotron h1 {
+    font-size: 86px; }
   .jumbotron p {
     font-family: Raleway;
     text-shadow: 1px 1px black; }
@@ -78,11 +61,9 @@ nav {
       color: saddlebrown; }
 
 #about {
-  min-height: 450px;
   width: 95%;
   margin: 0 auto;
-  font-family: Raleway;
-  overflow: auto; }
+  font-family: Raleway; }
   #about h1 {
     padding: 10px;
     padding-bottom: 3px;
@@ -131,8 +112,9 @@ nav {
 
 #projects {
   min-height: 100vh;
+  min-width: 100%;
   width: 100%;
-  /* margin: 0 auto;*/
+  margin: 0 !important;
   font-family: Raleway;
   display: -webkit-box;
   display: -webkit-flex;
@@ -142,7 +124,8 @@ nav {
   -webkit-box-direction: normal;
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
-  flex-flow: column; }
+  flex-flow: column;
+  overflow: hidden; }
   #projects h1 {
     padding: 10px;
     padding-bottom: 3px;
@@ -151,26 +134,32 @@ nav {
     text-shadow: 1px 1px papayawhip;
     margin-top: 30px; }
   #projects .coffee {
-    background-color: purple; }
+    background-color: #330066; }
+  #projects .football {
+    background-color: #802000; }
   #projects .project {
     width: 100%;
     margin: 0 auto;
     padding: 15px;
-    background-color: dimgrey;
-    font-family: Raleway; }
+    /*
+        background-color: dimgrey;*/
+    font-family: Lato; }
     #projects .project p {
       height: 100px;
       width: 75%;
       overflow: hidden;
-      font-family: Raleway;
+      color: white;
+      font-family: Lato;
       font-weight: 400;
       line-height: 1.5;
       color: #292b2c;
       height: auto;
       margin-top: 20px; }
     #projects .project img {
-      margin: auto;
-      width: 100% !important; }
+      display: block;
+      margin: 0 auto;
+      padding-top: 15px;
+      width: 97% !important; }
     #projects .project .links {
       height: 10vh;
       width: 25%; }
