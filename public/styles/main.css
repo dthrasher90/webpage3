@@ -7,7 +7,10 @@ body {
   box-sizing: border-box; }
 
 nav {
-  background-color: black; }
+  background-color: black;
+  position: fixed;
+  z-index: 5;
+  width: 100%; }
   nav ul {
     list-style-type: none;
     padding: 0;
@@ -36,7 +39,8 @@ nav {
           background-color: silver; }
 
 .jumbotron {
-  min-height: 90vh;
+  min-height: 85vh;
+  height: 85vh;
   width: 100%;
   font-family: 'Bree Serif', serif;
   text-shadow: 2px 2px black;
@@ -110,6 +114,19 @@ nav {
       -ms-flex: 1;
       flex: 1; }
 
+#projects .project p {
+  height: 100px;
+  width: 75%;
+  overflow: hidden;
+  color: white;
+  font-family: Lato;
+  font-weight: 400;
+  line-height: 1.5;
+  color: papayawhip;
+  /*#292b2c;*/
+  height: auto;
+  margin-top: 20px; }
+
 #projects {
   min-height: 100vh;
   min-width: 100%;
@@ -132,18 +149,40 @@ nav {
     width: 100%;
     font-family: 'Bree Serif', serif;
     text-shadow: 1px 1px papayawhip;
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-left: 25px; }
   #projects .coffee {
-    background-color: #330066; }
+    background-color: #3E336A; }
+    #projects .coffee p {
+      height: 100px;
+      width: 75%;
+      overflow: hidden;
+      color: white;
+      font-family: Lato;
+      font-weight: 400;
+      line-height: 1.5;
+      /*   color: #292b2c;*/
+      height: auto;
+      margin-top: 20px; }
   #projects .football {
-    background-color: #802000; }
+    background-color: #B66B25;
+    /*#9B693A;*/ }
   #projects .project {
     width: 100%;
     margin: 0 auto;
     padding: 15px;
-    /*
-        background-color: dimgrey;*/
     font-family: Lato; }
+    #projects .project .narrative {
+      height: 100px;
+      width: 75%;
+      overflow: hidden;
+      color: white;
+      font-family: Lato;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #292b2c !important;
+      height: auto;
+      margin-top: 20px; }
     #projects .project p {
       height: 100px;
       width: 75%;
@@ -163,6 +202,45 @@ nav {
     #projects .project .links {
       height: 10vh;
       width: 25%; }
+
+#contact {
+  height: 90vh;
+  margin-top: 70px; }
+  #contact h1 {
+    padding: 10px;
+    padding-bottom: 3px;
+    width: 100%;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 1px 1px papayawhip;
+    margin-top: 30px;
+    margin-left: 25px; }
+  #contact .contactLinks {
+    height: 200px;
+    border: 3px solid red;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    #contact .contactLinks a {
+      color: saddlebrown;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0px;
+      flex: 1 1 0;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      vertical-align: top; }
 
 footer {
   border-top: 1px solid black;
