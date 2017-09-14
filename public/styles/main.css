@@ -94,17 +94,19 @@ nav {
     -ms-flex-flow: column;
     flex-flow: column; }
     #about article img {
-      height: 50px;
-      width: 50px;
-      float: right;
-      padding: 30px;
-      margin-left: 50px;
-      margin-top: 10px;
-      border-left: 1px solid #f8f8f8;
-      -webkit-box-flex: 2;
-      -webkit-flex: 2;
-      -ms-flex: 2;
-      flex: 2; }
+      /* height: 50px;
+            width: 50px;
+            float: right;
+            padding: 30px;
+            margin-left: 50px;
+            margin-top: 10px;
+            border-left: 1px solid #f8f8f8;
+            flex: 2;*/
+      padding: 0;
+      border: 0;
+      border-radius: 100%;
+      height: auto;
+      width: 300px; }
     #about article h3 {
       font-family: 'Bree Serif', serif;
       margin-left: 10px;
@@ -147,39 +149,34 @@ nav {
   #projects .coffee {
     background-color: #3E336A; }
     #projects .coffee p {
-      height: 100px;
-      width: 75%;
+      width: 90%;
       overflow: hidden;
       color: white;
       font-family: Lato;
       font-weight: 400;
       line-height: 1.5;
       height: auto;
-      margin-top: 20px; }
+      margin: 20px; }
   #projects .football {
     background-color: #B66B25; }
     #projects .football p {
-      margin-left: 20px;
-      color: white;
-      height: 100px;
-      width: 75%;
+      width: 90%;
       overflow: hidden;
+      color: white;
       font-family: Lato;
       font-weight: 400;
       line-height: 1.5;
       height: auto;
-      margin-top: 20px; }
+      margin: 20px; }
   #projects .currency p {
-    height: 100px;
-    width: 75%;
+    width: 90%;
     overflow: hidden;
-    color: black;
+    color: white;
     font-family: Lato;
     font-weight: 400;
     line-height: 1.5;
     height: auto;
-    margin-top: 20px;
-    margin-left: 20px; }
+    margin: 20px; }
   #projects .project {
     width: 100%;
     margin: 0 auto;
@@ -204,6 +201,11 @@ nav {
       height: 10vh;
       width: 25%;
       vertical-align: text-top; }
+    #projects .project a {
+      color: black;
+      padding: 15px;
+      margin-top: 15px;
+      float: left; }
 
 #contact {
   height: 40vh;
@@ -218,30 +220,16 @@ nav {
     margin-left: 25px; }
   #contact .contactLinks {
     height: 200px;
-    border: 3px solid red;
     width: 100%;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
-    flex-flow: row;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     #contact .contactLinks a {
       color: saddlebrown;
-      -webkit-box-flex: 1;
-      -webkit-flex: 1 1 0;
-      -ms-flex: 1 1 0px;
-      flex: 1 1 0;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       vertical-align: top; }
 
 footer {
