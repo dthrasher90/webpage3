@@ -53,7 +53,7 @@ nav {
 
 
 
-#home{
+#home {
     width: 100%;
 
     padding-top: 40px;
@@ -67,7 +67,7 @@ nav {
     overflow: hidden;
 
 
-    height: 85vh;
+    height: 90vh;
     width: 100%;
 
     font-family: 'Bree Serif', serif;
@@ -95,7 +95,7 @@ nav {
 
 .links {
     margin-left: 15px;
-  
+
     a {
         color: papayawhip;
 
@@ -139,7 +139,7 @@ nav {
         flex-flow: column;
 
         img {
-     
+
             padding: 0;
             border: 0;
             border-radius: 100%;
@@ -232,14 +232,14 @@ nav {
             margin: 20px;
         }
 
-        a{
+        a {
             color: black;
         }
     }
 
-    .currency{
+    .currency {
 
-         p {
+        p {
 
             width: 90%;
             overflow: hidden;
@@ -251,7 +251,7 @@ nav {
             margin: 20px;
         }
 
-        a{
+        a {
             color: black;
         }
     }
@@ -279,8 +279,6 @@ nav {
             color: black;
             margin-left: 20px;
         }
-
-     
     }
 }
 
@@ -306,21 +304,18 @@ nav {
 
     .contactLinks {
         height: 200px;
-        width:100%;
+        width: 70%;
         margin-left: 30px;
         margin-top: 45px;
         box-sizing: border-box;
 
-         a {
+        a {
 
             color: black;
             padding: 10px;
             margin-top: 35px;
-
-            
-
-        }   
-   }
+        }
+    }
 }
 
 
@@ -335,7 +330,7 @@ footer {
     margin-top: 30px;
     padding: 20px;
 
-    .copywright{
+    .copywright {
         padding: 10px;
     }
 }
