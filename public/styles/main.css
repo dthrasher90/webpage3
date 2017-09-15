@@ -200,7 +200,7 @@ nav {
   #contact h1 {
     padding: 10px;
     padding-bottom: 3px;
-    width: 100%;
+    /* width: 100%;*/
     font-family: 'Bree Serif', serif;
     text-shadow: 1px 1px papayawhip;
     margin-top: 30px;
