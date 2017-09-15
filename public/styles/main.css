@@ -42,11 +42,12 @@ nav {
           background-color: silver; }
 
 #home {
-  width: 100%; }
+  width: 100%;
+  padding-top: 40px; }
 
 .jumbotron {
   background-image: url(utah10.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 85vh;
