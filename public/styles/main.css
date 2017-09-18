@@ -11,7 +11,7 @@ nav {
   background-color: black;
   position: fixed;
   z-index: 5;
-  width: 50%;
+  width: 100%;
   /*padding: 10px;*/
   height: 40px;
   line-height: 40px; }
@@ -79,7 +79,8 @@ nav {
   width: 100%;
   margin: 0 auto;
   font-family: Raleway;
-  padding-top: 10px; }
+  padding-top: 10px;
+  height: 85vh; }
   #about h1 {
     padding: 10px;
     padding-bottom: 3px;
@@ -90,34 +91,44 @@ nav {
     text-shadow: 1px 1px papayawhip;
     margin-top: 30px;
     margin-left: 25px; }
-  #about article {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
+  #about .aboutWrap {
+    max-width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column; }
-    #about article img {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-flow: row-reverse;
+    -ms-flex-flow: row-reverse;
+    flex-flow: row-reverse; }
+    #about .aboutWrap article {
+      height: 100%;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+      flex-flow: column; }
+    #about .aboutWrap img {
       padding: 0;
       border: 0;
       border-radius: 100%;
-      height: auto;
-      width: 300px; }
-    #about article h3 {
+      height: 25%;
+      width: 25%; }
+    #about .aboutWrap h3 {
       font-family: 'Bree Serif', serif;
-      margin-left: 10px;
+      margin-left: 35px;
       padding-top: 10px; }
-    #about article p {
+    #about .aboutWrap p {
       font-family: 'Lato', serif;
       padding-bottom: 5px;
       padding: 5px;
-      padding-left: 10px;
+      padding-left: 40px;
       -webkit-box-flex: 1;
       -webkit-flex: 1;
       -ms-flex: 1;
@@ -139,6 +150,11 @@ nav {
     margin-left: 25px; }
   #projects .coffee {
     background-color: #3E336A; }
+    #projects .coffee h3 {
+      text-align: center;
+      text-decoration: underline;
+      padding-top: 10px;
+      color: papayawhip; }
     #projects .coffee p {
       width: 90%;
       overflow: hidden;
@@ -150,6 +166,11 @@ nav {
       margin: 20px; }
   #projects .football {
     background-color: #B66B25; }
+    #projects .football h3 {
+      text-align: center;
+      text-decoration: underline;
+      padding-top: 10px;
+      color: papayawhip; }
     #projects .football p {
       width: 90%;
       overflow: hidden;
@@ -159,6 +180,11 @@ nav {
       line-height: 1.5;
       height: auto;
       margin: 20px; }
+  #projects .contact h3 {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 10px;
+    color: black; }
   #projects .contact p {
     width: 90%;
     overflow: hidden;
@@ -169,6 +195,11 @@ nav {
     height: auto;
     margin: 20px; }
   #projects .contact a {
+    color: black; }
+  #projects .currency h3 {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 10px;
     color: black; }
   #projects .currency p {
     width: 90%;

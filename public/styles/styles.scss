@@ -13,7 +13,7 @@ nav {
     background-color: black;
     position: fixed;
     z-index: 5;
-    width: 50%;
+    width: 100%;
     /*padding: 10px;*/
     height: 40px;
     line-height: 40px;
@@ -112,6 +112,7 @@ nav {
     margin: 0 auto;
     font-family: Raleway;
     padding-top: 10px;
+    height: 85vh;
     h1 {
         padding: 10px;
         padding-bottom: 3px;
@@ -123,38 +124,44 @@ nav {
 
         text-shadow: 1px 1px papayawhip;
 
-         margin-top: 30px;
-       margin-left: 25px;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
 
-       }
+    .aboutWrap {
 
-    article {
-        height: 100%;
-        width: 100%;
-
-        margin: 0 auto;
+        max-width: 100%;
         display: flex;
-        flex-flow: column;
+        flex-flow: row-reverse;
+
+
+           article {
+            height: 100%;
+
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column;
+        }
 
         img {
 
             padding: 0;
             border: 0;
             border-radius: 100%;
-            height: auto;
-            width: 300px;
+            height: 25%;
+            width: 25%;
         }
 
         h3 {
             font-family: 'Bree Serif', serif;
-            margin-left: 10px;
+            margin-left: 35px;
             padding-top: 10px;
         }
         p {
             font-family: 'Lato', serif;
             padding-bottom: 5px;
             padding: 5px;
-            padding-left: 10px;
+            padding-left: 40px;
             flex: 1;
         }
     }
@@ -187,6 +194,13 @@ nav {
     .coffee {
         background-color: #3E336A;
 
+          h3{
+            text-align: center;
+            text-decoration: underline;
+            padding-top: 10px;
+            color: papayawhip;
+        }
+
         p {
 
             width: 90%;
@@ -203,6 +217,13 @@ nav {
     .football {
         background-color: #B66B25;
 
+               h3{
+            text-align: center;
+            text-decoration: underline;
+            padding-top: 10px;
+            color: papayawhip;
+        }
+
         p {
             width: 90%;
             overflow: hidden;
@@ -217,6 +238,13 @@ nav {
 
 
     .contact {
+
+               h3{
+            text-align: center;
+            text-decoration: underline;
+            padding-top: 10px;
+            color: black;
+        }
 
         p {
 
@@ -236,6 +264,13 @@ nav {
     }
 
     .currency {
+
+               h3{
+            text-align: center;
+            text-decoration: underline;
+            padding-top: 10px;
+            color: black;
+        }
 
         p {
 
@@ -278,6 +313,7 @@ nav {
             color: black;
             margin-left: 20px;
         }
+
     }
 }
 
@@ -352,14 +388,14 @@ footer {
 
     .jumbotron {
 
-        height:600px !important;
+        height: 600px !important;
         width: 100%;
 
         background-image: url(utah10.jpg);
         background-size: 100% cover;
         background-repeat: no-repeat;
 
-     
+
         font-family: 'Bree Serif', serif;
         text-shadow: 2px 2px black;
         margin: 0 auto;
@@ -387,6 +423,8 @@ footer {
         }
     }
 }
+
+
 
 /*
 @media only screen and (max-width: 416px) {
