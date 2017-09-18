@@ -1,5 +1,6 @@
 body {
-  background-color: white; }
+  background-color: white;
+  width: 100%; }
 
 * {
   margin: 0;
@@ -10,7 +11,7 @@ nav {
   background-color: black;
   position: fixed;
   z-index: 5;
-  width: 100%;
+  width: 50%;
   /*padding: 10px;*/
   height: 40px;
   line-height: 40px; }
@@ -82,9 +83,10 @@ nav {
   #about h1 {
     padding: 10px;
     padding-bottom: 3px;
-    width: 100%;
+    /*overflow: hidden;
+*/
     font-family: 'Bree Serif', serif;
-    font-size: 38px;
+    font-size: 36px;
     text-shadow: 1px 1px papayawhip;
     margin-top: 30px;
     margin-left: 25px; }
@@ -183,7 +185,9 @@ nav {
     width: 100%;
     margin: 0 auto;
     padding: 15px;
-    font-family: Lato; }
+    font-family: Lato;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
     #projects .project img {
       display: block;
       margin: 0 auto;
@@ -230,13 +234,13 @@ footer {
   footer .copywright {
     padding: 10px; }
 
-@media only screen and (max-width: 652px) and (min-width: 416px) {
+@media only screen and (max-width: 738px) and (min-width: 568px) {
   .jumbotron {
+    height: 600px !important;
+    width: 100%;
     background-image: url(utah10.jpg);
     background-size: 100% cover;
     background-repeat: no-repeat;
-    min-height: 65vh;
-    width: 100%;
     font-family: 'Bree Serif', serif;
     text-shadow: 2px 2px black;
     margin: 0 auto;
@@ -264,32 +268,48 @@ footer {
         font-size: 18px;
         text-shadow: 1px 1px black; } }
 
+/*
 @media only screen and (max-width: 416px) {
-  .jumbotron {
-    background-image: url(utah10.jpg);
-    background-size: 100% cover cover;
-    background-repeat: no-repeat;
-    min-height: 50vh !important;
-    width: 100%;
-    font-family: 'Bree Serif', serif;
-    text-shadow: 2px 2px black;
-    margin: 0 auto; }
-    .jumbotron .title {
-      height: 200px !important;
-      text-align: center;
-      color: papayawhip;
-      font-size: 12px;
-      margin-top: 0 auto;
-      overflow: hidden; }
-      .jumbotron .title h1 {
-        font-size: 12px; }
-      .jumbotron .title p {
-        font-family: Raleway;
-        text-shadow: 1px 1px black;
-        font-size: 18px; }
-  #about {
-    margin-top: 0px; } }
 
+    .jumbotron {
+        background-image: url(utah10.jpg);
+        background-size: 100% cover cover;
+        background-repeat: no-repeat;
+
+        min-height: 50vh !important;
+        width: 100%;
+
+        font-family: 'Bree Serif', serif;
+        text-shadow: 2px 2px black;
+        margin: 0 auto;
+
+        .title {
+            height: 200px !important;
+            text-align: center;
+            color: papayawhip;
+            font-size: 12px;
+
+
+
+            margin-top: 0 auto;
+            overflow: hidden;
+
+            h1 {
+                font-size: 12px;
+            }
+
+            p {
+                font-family: Raleway;
+                text-shadow: 1px 1px black;
+                font-size: 18px;
+            }
+        }
+    }
+
+    #about {
+        margin-top: 0px;
+    }
+}*/
 .underline {
   background-image: -webkit-linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);
   background-image: -o-linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);

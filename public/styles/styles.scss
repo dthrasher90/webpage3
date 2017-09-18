@@ -1,6 +1,7 @@
 body {
 
     background-color: white;
+    width: 100%;
 }
 
 * {
@@ -12,7 +13,7 @@ nav {
     background-color: black;
     position: fixed;
     z-index: 5;
-    width: 100%;
+    width: 50%;
     /*padding: 10px;*/
     height: 40px;
     line-height: 40px;
@@ -114,15 +115,18 @@ nav {
     h1 {
         padding: 10px;
         padding-bottom: 3px;
-        width: 100%;
 
+        /*overflow: hidden;
+*/
         font-family: 'Bree Serif', serif;
-        font-size: 38px;
+        font-size: 36px;
 
         text-shadow: 1px 1px papayawhip;
-        margin-top: 30px;
-            margin-left: 25px;
-    }
+
+         margin-top: 30px;
+       margin-left: 25px;
+
+       }
 
     article {
         height: 100%;
@@ -257,6 +261,7 @@ nav {
         margin: 0 auto;
         padding: 15px;
         font-family: Lato;
+        box-sizing: border-box;
 
         img {
             display: block;
@@ -343,16 +348,18 @@ footer {
 
 
 
-@media only screen and (max-width: 750px) and (min-width: 416px) {
+@media only screen and (max-width: 738px) and (min-width: 568px) {
 
     .jumbotron {
+
+        height:600px !important;
+        width: 100%;
+
         background-image: url(utah10.jpg);
         background-size: 100% cover;
         background-repeat: no-repeat;
 
-        height: 65vh !important;
-        width: 100%;
-
+     
         font-family: 'Bree Serif', serif;
         text-shadow: 2px 2px black;
         margin: 0 auto;
@@ -381,7 +388,7 @@ footer {
     }
 }
 
-
+/*
 @media only screen and (max-width: 416px) {
 
     .jumbotron {
@@ -403,6 +410,7 @@ footer {
             font-size: 12px;
 
 
+
             margin-top: 0 auto;
             overflow: hidden;
 
@@ -421,8 +429,7 @@ footer {
     #about {
         margin-top: 0px;
     }
-}
-
+}*/
 
 .underline {
     background-image: linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);
