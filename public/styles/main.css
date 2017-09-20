@@ -12,7 +12,6 @@ nav {
   position: fixed;
   z-index: 5;
   width: 100%;
-  /*padding: 10px;*/
   height: 40px;
   line-height: 40px; }
   nav ul {
@@ -68,42 +67,49 @@ nav {
     font-family: Raleway;
     text-shadow: 1px 1px black; }
 
-.links {
-  margin-left: 15px; }
-  .links a {
-    color: papayawhip; }
-    .links a:hover {
-      color: saddlebrown; }
-
 #about {
   width: 100%;
   margin: 0 auto;
   font-family: Raleway;
   padding-top: 10px;
-  height: 85vh; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column; }
   #about h1 {
     padding: 10px;
     padding-bottom: 3px;
-    /*overflow: hidden;
-*/
     font-family: 'Bree Serif', serif;
     font-size: 36px;
     text-shadow: 1px 1px papayawhip;
     margin-top: 30px;
-    margin-left: 25px; }
-  #about .aboutWrap {
-    max-width: 100%;
+    margin-left: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column; }
+  #about .about {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -webkit-flex-flow: row-reverse;
-    -ms-flex-flow: row-reverse;
-    flex-flow: row-reverse; }
-    #about .aboutWrap article {
-      height: 100%;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row; }
+    #about .about article {
+      /*height: 100%;*/
       margin: 0 auto;
       display: -webkit-box;
       display: -webkit-flex;
@@ -114,17 +120,17 @@ nav {
       -webkit-flex-flow: column;
       -ms-flex-flow: column;
       flex-flow: column; }
-    #about .aboutWrap img {
+    #about .about img {
       padding: 0;
       border: 0;
       border-radius: 100%;
       height: 25%;
       width: 25%; }
-    #about .aboutWrap h3 {
+    #about .about h3 {
       font-family: 'Bree Serif', serif;
       margin-left: 35px;
       padding-top: 10px; }
-    #about .aboutWrap p {
+    #about .about p {
       font-family: 'Lato', serif;
       padding-bottom: 5px;
       padding: 5px;
@@ -147,12 +153,11 @@ nav {
     font-size: 36px;
     text-shadow: 1px 1px papayawhip;
     margin-top: 30px;
-    margin-left: 25px; }
+    margin-left: 15px; }
   #projects .coffee {
     background-color: #3E336A; }
-    #projects .coffee h3 {
+    #projects .coffee h2 {
       text-align: center;
-      text-decoration: underline;
       padding-top: 10px;
       color: papayawhip; }
     #projects .coffee p {
@@ -163,12 +168,34 @@ nav {
       font-weight: 400;
       line-height: 1.5;
       height: auto;
-      margin: 20px; }
+      margin: 20px;
+      text-align: center; }
+    #projects .coffee .links {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+      flex-flow: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%; }
+      #projects .coffee .links i {
+        color: papayawhip;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 10px; }
   #projects .football {
     background-color: #B66B25; }
-    #projects .football h3 {
+    #projects .football h2 {
       text-align: center;
-      text-decoration: underline;
       padding-top: 10px;
       color: papayawhip; }
     #projects .football p {
@@ -179,10 +206,32 @@ nav {
       font-weight: 400;
       line-height: 1.5;
       height: auto;
-      margin: 20px; }
-  #projects .contact h3 {
+      margin: 20px;
+      text-align: center; }
+    #projects .football .links {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+      flex-flow: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%; }
+      #projects .football .links i {
+        color: papayawhip;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 10px; }
+  #projects .contact h2 {
     text-align: center;
-    text-decoration: underline;
     padding-top: 10px;
     color: black; }
   #projects .contact p {
@@ -193,12 +242,32 @@ nav {
     font-weight: 400;
     line-height: 1.5;
     height: auto;
-    margin: 20px; }
-  #projects .contact a {
-    color: black; }
-  #projects .currency h3 {
+    margin: 20px;
+    text-align: center; }
+  #projects .contact .links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%; }
+    #projects .contact .links i {
+      color: black;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 10px; }
+  #projects .currency h2 {
     text-align: center;
-    text-decoration: underline;
     padding-top: 10px;
     color: black; }
   #projects .currency p {
@@ -209,9 +278,33 @@ nav {
     font-weight: 400;
     line-height: 1.5;
     height: auto;
-    margin: 20px; }
+    margin: 20px;
+    text-align: center; }
   #projects .currency a {
-    color: black; }
+    color: black;
+    text-align: center; }
+  #projects .currency .links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%; }
+    #projects .currency .links i {
+      color: black;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 10px; }
   #projects .project {
     width: 100%;
     margin: 0 auto;
@@ -224,16 +317,10 @@ nav {
       margin: 0 auto;
       padding-top: 15px;
       width: 97% !important; }
-    #projects .project .links {
-      height: 10vh;
-      width: 25%;
-      vertical-align: text-top;
-      color: black;
-      margin-left: 20px; }
 
 #contact {
-  height: 40vh;
-  margin-top: 70px; }
+  /*   height: 40vh;
+    margin-top: 70px;*/ }
   #contact h1 {
     padding: 10px;
     padding-bottom: 3px;
@@ -243,20 +330,36 @@ nav {
     margin-top: 30px;
     margin-left: 25px; }
   #contact .contactLinks {
-    height: 200px;
-    width: 70%;
-    margin-left: 30px;
-    margin-top: 45px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     #contact .contactLinks a {
       color: black;
       padding: 10px;
-      margin-top: 35px; }
+      margin-top: 35px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      padding: 15px;
+      font-family: Lato; }
 
 footer {
   border-top: 1px solid black;
-  height: 30px;
+  /*height: 30px;*/
   text-align: center;
   font-family: Raleway;
   font-weight: bold;
@@ -299,9 +402,8 @@ footer {
   #about {
     width: 100%;
     margin: 0 auto;
-    height: 730px !important;
-    font-family: Raleway;
-    /*   padding-top: -10px;*/ }
+    /*height: 730px !important;*/
+    font-family: Raleway; }
     #about h1 {
       padding: 10px;
       padding-bottom: 3px;
@@ -312,41 +414,31 @@ footer {
       text-shadow: 1px 1px papayawhip;
       margin-top: 30px;
       margin-left: 25px; }
-    #about .aboutWrap {
-      max-width: 100%;
+    #about .about {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
-      -webkit-flex-flow: row-reverse;
-      -ms-flex-flow: row-reverse;
-      flex-flow: row-reverse; }
-      #about .aboutWrap article {
-        /*  height: 75%;
-*/
-        margin: 0 auto;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-        flex-flow: column; }
-      #about .aboutWrap img {
+      -webkit-flex-flow: column-reverse;
+      -ms-flex-flow: column-reverse;
+      flex-flow: column-reverse; }
+      #about .about article {
+        margin: 0 auto; }
+      #about .about img {
         padding: 0;
         border: 0;
         border-radius: 100%;
         height: 25%;
-        width: 25%; }
-      #about .aboutWrap h3 {
+        width: 25%;
+        margin: auto;
+        width: 50%; }
+      #about .about h3 {
         font-family: 'Bree Serif', serif;
         margin-left: 35px;
         padding-top: 10px; }
-      #about .aboutWrap p {
+      #about .about p {
         font-family: 'Lato', serif;
         padding-bottom: 5px;
         padding: 5px;
@@ -393,17 +485,23 @@ footer {
 @media only screen and (max-width: 800px) and (min-width: 450px) {
   .jumbotron {
     background-image: url(utah10.jpg);
-    background-size: 768px 320px;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 425px;
+    /* height: 375px;*/
     font-family: 'Bree Serif', serif;
     text-shadow: 2px 2px black;
     text-align: center;
     margin: 0 auto;
-    /*  display: flex;
-        flex-flow: row;
-*/ }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row; }
     .jumbotron .title {
       color: papayawhip;
       margin-top: 200px;
@@ -418,10 +516,59 @@ footer {
         font-size: 50px;
         text-align: center; }
       .jumbotron .title h2 {
-        /*    font-family: Raleway;*/
+        font-family: Raleway;
         font-size: 30px;
         text-shadow: 1px 1px black;
-        text-align: center; } }
+        text-align: center; }
+  #about {
+    width: 100%;
+    margin: 0 auto;
+    /*height: 730px !important;*/
+    font-family: Raleway;
+    /*   padding-top: -10px;*/ }
+    #about h1 {
+      padding: 10px;
+      padding-bottom: 3px;
+      /*overflow: hidden;
+*/
+      font-family: 'Bree Serif', serif;
+      font-size: 36px;
+      text-shadow: 1px 1px papayawhip;
+      margin-top: 30px;
+      margin-left: 25px; }
+    #about .about {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-flow: column-reverse;
+      -ms-flex-flow: column-reverse;
+      flex-flow: column-reverse; }
+      #about .about article {
+        margin: 0 auto; }
+      #about .about img {
+        padding: 0;
+        border: 0;
+        border-radius: 100%;
+        height: 25%;
+        width: 25%;
+        margin: auto;
+        width: 50%; }
+      #about .about h3 {
+        font-family: 'Bree Serif', serif;
+        margin-left: 35px;
+        padding-top: 10px; }
+      #about .about p {
+        font-family: 'Lato', serif;
+        padding-bottom: 5px;
+        padding: 5px;
+        padding-left: 40px;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1; } }
 
 /*
 @media only screen and (max-width: 416px) {
