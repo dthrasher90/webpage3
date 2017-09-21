@@ -120,7 +120,6 @@ nav {
       width: 250px; }
 
 #projects {
-  min-height: 100vh;
   width: 100%;
   margin-top: 0 auto;
   font-family: Raleway;
@@ -147,7 +146,6 @@ nav {
       font-family: Lato;
       font-weight: 400;
       line-height: 1.5;
-      height: auto;
       margin: 20px;
       text-align: center; }
     #projects .coffee .links {
@@ -185,7 +183,6 @@ nav {
       font-family: Lato;
       font-weight: 400;
       line-height: 1.5;
-      height: auto;
       margin: 20px;
       text-align: center; }
     #projects .football .links {
@@ -210,81 +207,83 @@ nav {
         -ms-flex-pack: center;
         justify-content: center;
         padding: 10px; }
-  #projects .contact h2 {
-    text-align: center;
-    padding-top: 10px;
-    color: black; }
-  #projects .contact p {
-    width: 90%;
-    overflow: hidden;
-    color: black;
-    font-family: Lato;
-    font-weight: 400;
-    line-height: 1.5;
-    height: auto;
-    margin: 20px;
-    text-align: center; }
-  #projects .contact .links {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%; }
-    #projects .contact .links i {
-      color: black;
+  #projects .contact {
+    background-color: darkolivegreen; }
+    #projects .contact h2 {
+      text-align: center;
+      padding-top: 10px;
+      color: papayawhip; }
+    #projects .contact p {
+      width: 90%;
+      overflow: hidden;
+      color: papayawhip;
+      font-family: Lato;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 20px;
+      text-align: center; }
+    #projects .contact .links {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+      flex-flow: row;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding: 10px; }
-  #projects .currency h2 {
-    text-align: center;
-    padding-top: 10px;
-    color: black; }
-  #projects .currency p {
-    width: 90%;
-    overflow: hidden;
-    color: black;
-    font-family: Lato;
-    font-weight: 400;
-    line-height: 1.5;
-    height: auto;
-    margin: 20px;
-    text-align: center; }
-  #projects .currency a {
-    color: black;
-    text-align: center; }
-  #projects .currency .links {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%; }
-    #projects .currency .links i {
-      color: black;
+      width: 100%; }
+      #projects .contact .links i {
+        color: papayawhip;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 10px; }
+  #projects .currency {
+    background-color: sienna; }
+    #projects .currency h2 {
+      text-align: center;
+      padding-top: 10px;
+      color: papayawhip; }
+    #projects .currency p {
+      width: 90%;
+      overflow: hidden;
+      color: papayawhip;
+      font-family: Lato;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 20px;
+      text-align: center; }
+    #projects .currency a {
+      color: papayawhip;
+      text-align: center; }
+    #projects .currency .links {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+      flex-flow: row;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding: 10px; }
+      width: 100%; }
+      #projects .currency .links i {
+        color: papayawhip;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 10px; }
   #projects .project {
     width: 100%;
     margin: 0 auto;
@@ -311,52 +310,20 @@ nav {
     margin-left: 25px; }
   #contact .contactLinks {
     width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 20px 20px 0px 20px; }
-    #contact .contactLinks .contactNarrative {
-      background-color: goldenrod;
-      width: 60%; }
-      #contact .contactLinks .contactNarrative p {
-        padding: 45px;
-        text-align: left;
-        border-right: 1px;
-        font-family: Raleway;
-        font-weight: 200;
-        line-height: 1.5;
-        font-size: 20px; }
-        #contact .contactLinks .contactNarrative p .bold {
-          font-weight: bold;
-          color: saddlebrown; }
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
     #contact .contactLinks a {
-      color: black;
+      padding: 15px;
+      color: saddlebrown;
+      display: inline;
+      vertical-align: middle;
+      margin: 0 auto;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
-      justify-content: center;
-      text-align: center;
-      text-decoration: none;
-      font-family: Raleway;
-      font-weight: 200;
-      width: 15%;
-      /* border-left: 1px solid black;*/
-      padding: 45px;
-      padding-top: 75px; }
-      #contact .contactLinks a i {
-        vertical-align: top; }
-        #contact .contactLinks a i p {
-          padding: 40px; }
+      justify-content: center; }
 
 footer {
   border-top: 1px solid black;

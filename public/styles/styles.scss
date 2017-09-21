@@ -122,9 +122,6 @@ nav {
         .about {
 
 
-
-
-
             display: flex;
             flex-flow: column;
 
@@ -159,7 +156,7 @@ nav {
 
 #projects {
 
-    min-height: 100vh;
+
     width: 100%;
     margin-top: 0 auto;
     font-family: Raleway;
@@ -198,7 +195,7 @@ nav {
             font-family: Lato;
             font-weight: 400;
             line-height: 1.5;
-            height: auto;
+
             margin: 20px;
             text-align: center;
         }
@@ -232,7 +229,7 @@ nav {
             font-family: Lato;
             font-weight: 400;
             line-height: 1.5;
-            height: auto;
+
             margin: 20px;
             text-align: center;
         }
@@ -253,21 +250,23 @@ nav {
 
     .contact {
 
+         background-color: darkolivegreen;
+
         h2 {
             text-align: center;
             padding-top: 10px;
-            color: black;
+            color: papayawhip;
         }
 
         p {
 
             width: 90%;
             overflow: hidden;
-            color: black;
+            color: papayawhip;
             font-family: Lato;
             font-weight: 400;
             line-height: 1.5;
-            height: auto;
+
             margin: 20px;
             text-align: center;
         }
@@ -278,7 +277,7 @@ nav {
             justify-content: center;
             width: 100%;
             i {
-                color: black;
+                color: papayawhip;
                 justify-content: center;
                 padding: 10px;
             }
@@ -286,28 +285,29 @@ nav {
     }
 
     .currency {
+        background-color: sienna ;
 
         h2 {
             text-align: center;
             padding-top: 10px;
-            color: black;
+            color: papayawhip;
         }
 
         p {
 
             width: 90%;
             overflow: hidden;
-            color: black;
+            color: papayawhip;
             font-family: Lato;
             font-weight: 400;
             line-height: 1.5;
-            height: auto;
+
             margin: 20px;
             text-align: center;
         }
 
         a {
-            color: black;
+            color: papayawhip;
             text-align: center;
         }
         .links {
@@ -317,7 +317,7 @@ nav {
             justify-content: center;
             width: 100%;
             i {
-                color: black;
+                color: papayawhip;
                 justify-content: center;
                 padding: 10px;
             }
@@ -365,54 +365,16 @@ nav {
     .contactLinks {
 
         width: 100%;
+        display: inline-flex;
 
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        padding: 20px 20px 0px 20px;
-
-        .contactNarrative {
-            background-color: goldenrod;
-
-            width: 60%;
-            p {
-                padding: 45px;
-                text-align: left;
-                border-right: 1px;
-                font-family: Raleway;
-                font-weight: 200;
-                line-height: 1.5;
-                font-size: 20px;
-
-                .bold{
-                    font-weight: bold;
-                    color: saddlebrown;
-            
-                }
-            }
-        }
-
+      
         a {
-
-            color: black;
-   
+            padding: 15px;
+            color: saddlebrown;
+            display: inline;
+            vertical-align: middle;
+            margin: 0 auto;
             justify-content: center;
-            text-align: center;
-            text-decoration: none;
-          
-            font-family: Raleway;
-            font-weight: 200;
-            width: 15%;
-           /* border-left: 1px solid black;*/
-            padding: 45px;
-            padding-top: 75px;
-
-            i{
-                vertical-align: top;
-                p{
-                    padding: 40px;
-                }
-            }
         }
     }
 }
