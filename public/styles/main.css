@@ -21,10 +21,10 @@ nav {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important; }
     nav ul li {
       text-decoration: none;
       text-align: center;
@@ -72,15 +72,8 @@ nav {
   margin: 0 auto;
   font-family: Raleway;
   padding-top: 10px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column; }
+  /* display: flex;
+    flex-flow: column;*/ }
   #about h1 {
     padding: 10px;
     padding-bottom: 3px;
@@ -89,28 +82,14 @@ nav {
     text-shadow: 1px 1px papayawhip;
     margin-top: 30px;
     margin-left: 15px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column; }
-  #about .about {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row;
-    -ms-flex-flow: row;
-    flex-flow: row; }
-    #about .about article {
-      /*height: 100%;*/
-      margin: 0 auto;
+    /*      display: flex;
+        flex-flow: column;*/ }
+  #about .aboutWrap {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    #about .aboutWrap .about {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -120,29 +99,30 @@ nav {
       -webkit-flex-flow: column;
       -ms-flex-flow: column;
       flex-flow: column; }
-    #about .about img {
+      #about .aboutWrap .about h3 {
+        font-family: 'Bree Serif', serif;
+        margin-left: 35px;
+        padding-top: 10px; }
+      #about .aboutWrap .about p {
+        font-family: 'Lato', serif;
+        padding-bottom: 5px;
+        padding: 5px;
+        padding-left: 40px;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+    #about .aboutWrap img {
       padding: 0;
       border: 0;
       border-radius: 100%;
-      height: 25%;
-      width: 25%; }
-    #about .about h3 {
-      font-family: 'Bree Serif', serif;
-      margin-left: 35px;
-      padding-top: 10px; }
-    #about .about p {
-      font-family: 'Lato', serif;
-      padding-bottom: 5px;
-      padding: 5px;
-      padding-left: 40px;
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1; }
+      height: 250px;
+      width: 250px; }
 
 #projects {
   min-height: 100vh;
   width: 100%;
+  margin-top: 0 auto;
   font-family: Raleway;
   overflow: hidden; }
   #projects h1 {
@@ -343,19 +323,40 @@ nav {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    padding: 20px 20px 0px 20px; }
+    #contact .contactLinks .contactNarrative {
+      background-color: goldenrod;
+      width: 60%; }
+      #contact .contactLinks .contactNarrative p {
+        padding: 45px;
+        text-align: left;
+        border-right: 1px;
+        font-family: Raleway;
+        font-weight: 200;
+        line-height: 1.5;
+        font-size: 20px; }
+        #contact .contactLinks .contactNarrative p .bold {
+          font-weight: bold;
+          color: saddlebrown; }
     #contact .contactLinks a {
       color: black;
-      padding: 10px;
-      margin-top: 35px;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
       text-align: center;
       text-decoration: none;
-      padding: 15px;
-      font-family: Lato; }
+      font-family: Raleway;
+      font-weight: 200;
+      width: 15%;
+      /* border-left: 1px solid black;*/
+      padding: 45px;
+      padding-top: 75px; }
+      #contact .contactLinks a i {
+        vertical-align: top; }
+        #contact .contactLinks a i p {
+          padding: 40px; }
 
 footer {
   border-top: 1px solid black;
@@ -403,7 +404,8 @@ footer {
     width: 100%;
     margin: 0 auto;
     /*height: 730px !important;*/
-    font-family: Raleway; }
+    font-family: Raleway;
+    /*   padding-top: -10px;*/ }
     #about h1 {
       padding: 10px;
       padding-bottom: 3px;
@@ -414,7 +416,7 @@ footer {
       text-shadow: 1px 1px papayawhip;
       margin-top: 30px;
       margin-left: 25px; }
-    #about .about {
+    #about .aboutWrap {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -424,29 +426,74 @@ footer {
       -webkit-flex-flow: column-reverse;
       -ms-flex-flow: column-reverse;
       flex-flow: column-reverse; }
-      #about .about article {
-        margin: 0 auto; }
-      #about .about img {
-        padding: 0;
-        border: 0;
-        border-radius: 100%;
-        height: 25%;
-        width: 25%;
-        margin: auto;
-        width: 50%; }
-      #about .about h3 {
-        font-family: 'Bree Serif', serif;
-        margin-left: 35px;
-        padding-top: 10px; }
-      #about .about p {
-        font-family: 'Lato', serif;
-        padding-bottom: 5px;
-        padding: 5px;
-        padding-left: 40px;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1; }
+      #about .aboutWrap .about {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column; }
+        #about .aboutWrap .about h3 {
+          font-family: 'Bree Serif', serif;
+          margin-left: 35px;
+          padding-top: 10px; }
+        #about .aboutWrap .about p {
+          font-family: 'Lato', serif;
+          padding-bottom: 5px;
+          padding: 5px;
+          padding-left: 40px;
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1; }
+    #about img {
+      padding: 0;
+      border: 0;
+      border-radius: 100%;
+      height: 25%;
+      width: 25%;
+      margin: auto;
+      width: 50%; } }
+
+nav {
+  background-color: black;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  /*padding: 10px;*/
+  height: 40px;
+  line-height: 40px; }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    nav ul li {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: 16px; }
+      nav ul li a {
+        text-decoration: none;
+        text-align: center;
+        color: silver;
+        display: block;
+        font-family: Lato;
+        padding: 0px 15px 0px 15px; }
+        nav ul li a:hover {
+          color: saddlebrown;
+          background-color: silver; }
+
+@media only screen and (max-width: 800px) and (min-width: 450px) {
   nav {
     background-color: black;
     position: fixed;
@@ -462,10 +509,10 @@ footer {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
       nav ul li {
         text-decoration: none;
         text-align: center;
@@ -480,15 +527,12 @@ footer {
           padding: 0px 15px 0px 15px; }
           nav ul li a:hover {
             color: saddlebrown;
-            background-color: silver; } }
-
-@media only screen and (max-width: 800px) and (min-width: 450px) {
+            background-color: silver; }
   .jumbotron {
     background-image: url(utah10.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    /* height: 375px;*/
     font-family: 'Bree Serif', serif;
     text-shadow: 2px 2px black;
     text-align: center;
@@ -529,6 +573,7 @@ footer {
     #about h1 {
       padding: 10px;
       padding-bottom: 3px;
+      text-align: center;
       /*overflow: hidden;
 */
       font-family: 'Bree Serif', serif;
@@ -536,7 +581,7 @@ footer {
       text-shadow: 1px 1px papayawhip;
       margin-top: 30px;
       margin-left: 25px; }
-    #about .about {
+    #about .aboutWrap {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -546,81 +591,34 @@ footer {
       -webkit-flex-flow: column-reverse;
       -ms-flex-flow: column-reverse;
       flex-flow: column-reverse; }
-      #about .about article {
-        margin: 0 auto; }
-      #about .about img {
-        padding: 0;
-        border: 0;
-        border-radius: 100%;
-        height: 25%;
-        width: 25%;
-        margin: auto;
-        width: 50%; }
-      #about .about h3 {
-        font-family: 'Bree Serif', serif;
-        margin-left: 35px;
-        padding-top: 10px; }
-      #about .about p {
-        font-family: 'Lato', serif;
-        padding-bottom: 5px;
-        padding: 5px;
-        padding-left: 40px;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1; } }
-
-/*
-@media only screen and (max-width: 416px) {
-
-    .jumbotron {
-        background-image: url(utah10.jpg);
-        background-size: 100% cover cover;
-        background-repeat: no-repeat;
-
-        min-height: 50vh !important;
-        width: 100%;
-
-        font-family: 'Bree Serif', serif;
-        text-shadow: 2px 2px black;
-        margin: 0 auto;
-
-        .title {
-            height: 200px !important;
-            text-align: center;
-            color: papayawhip;
-            font-size: 12px;
-
-
-
-            margin-top: 0 auto;
-            overflow: hidden;
-
-            h1 {
-                font-size: 12px;
-            }
-
-            p {
-                font-family: Raleway;
-                text-shadow: 1px 1px black;
-                font-size: 18px;
-            }
-        }
-    }
-
-    #about {
-        margin-top: 0px;
-    }
-}*/
-.underline {
-  background-image: -webkit-linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);
-  background-image: -o-linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);
-  background-image: linear-gradient(45deg, silver 0%, darkslategrey 50%, steelblue 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 3px;
-  background-position: 0 88%;
-  -webkit-transition: background-size 0.25s ease-in;
-  -o-transition: background-size 0.25s ease-in;
-  transition: background-size 0.25s ease-in; }
-  .underline:hover {
-    background-size: 100% 88%; }
+      #about .aboutWrap .about {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column; }
+        #about .aboutWrap .about h3 {
+          font-family: 'Bree Serif', serif;
+          margin-left: 35px;
+          padding-top: 10px; }
+        #about .aboutWrap .about p {
+          font-family: 'Lato', serif;
+          padding-bottom: 5px;
+          padding: 5px;
+          padding-left: 40px;
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1; }
+    #about img {
+      padding: 0;
+      border: 0;
+      border-radius: 100%;
+      height: 25%;
+      width: 25%;
+      margin: auto;
+      width: 50%; } }
